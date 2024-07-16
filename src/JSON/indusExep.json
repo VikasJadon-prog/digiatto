@@ -1,0 +1,65 @@
+{
+    "data":[
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/db3f/3484/c707a6a562b16ca933fbccb901b99dea?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oZ0F71NnhLqYw68JRln1kKKGUNlKPkBHaKqklqjGAmgQYzLM5-1yxtPKM3jvNhRpdDzHilA6m09wRk1ShzvaBB~ZYyhy38Z7OV3dQ6ssNaebaBqje5tfw5hH6Nkwa1VNpZhP4N3yZfpW2cxEAGZ2Hy40jiTWnVD~r5gL-K8N0UbRUF4UJjBplnexAO6s9K1YNNRgJGtTyvYvaFieuTlo9gqgcaBPgkmJRz-W2trulvKW5E6Fb71qn-6oz4D8dtj-XI4oDuxC8NKr2YV0SeaVTmMnrd9h90Hmpa2rLa7HjbnRez2azWrWZrTkF63x59FJ41dDgQi93bK7sTAYmFN~dA__",
+            "name":"Healthcare & Lifesciences",
+            "desc":"Codiant build highly advanced and custom Healthcare & Life Sciences solutions for all sizes of healthcare organizations and biopharma companies."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/958b/2f20/aa3d542601c2afa74d4f8fc840333d21?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hNIMF2~HBbKEZ1yDhqhLcR4ltc4adMuD-S2mRMuZLSNEPNOjglZBVqBZ0fzvzLLmtKGEMnfX6jyciNLI5lCowLDS6W2d7QvuMqt8zeTfZIv4Z-IYMYcfO1wiobw34OfFt2HEl9zm-4IQJcKLnsJ5d~6RqThDcASU2oNCa9hvOHN9N4BG8ioJBOLVKg68fdfxTIMx5tMhf4ot8aWqTpsomjv2CIk7QZ31UCLsl748UiGnedcnSh-a-de1pDzr7MZAzuZroL1EaC-oefqTBEU-rRVwpHqIxQUL8bl4TrTSOvrfra7mOLAZKDmWIBzh0d15IE3yitoYTtgpKiH1o6HnsQ__",
+            "name":"E-Commerce Solutions",
+            "desc":"We offer end-to-end web and mobile app development services to take your eCommerce businesses on the road to success."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/9ead/1864/133401e6eeb62f8ab85d5a3ba7b186c2?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nf-ryapHlYblSsjxBf-UZ-5xW55DZT3w~sj83PmyXH8LESI5rqGXEPyxQOjbeC8O3OVV8vZV479-vxkH89pHa3P1j8TBlo9zMIVcwwgAlqNDtVqr32xn40WhBWDUz0dYYxMX7ItVgubCCD05rT8WPGw-MzK~kZCNPMG-DM~NVPKihNqaSzyNma52zo3VoXCwgUD6W-6eOU5HHcE6WlUWa1IcH3QqEhkIgZJ-9pbb6DKPA6l7cAWTbVYRGdb3jJ5-y7zGCc2YgnsteWS~yHzAQi86vCstC~R-8RiRV0BDM8CtDlD-AXU0r4LwGpL0R6nh3lkbI7ieNaINvIECHLj3EA__",
+            "name":"Transport & Logistics",
+            "desc":"We deliver complete solutions for transport & logistics businesses right from on-demand logistics delivery and warehouse management to on-demand taxi booking and courier delivery solutions."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/4580/f7e5/02685575341718c0f985b65d8059fec7?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DDXAioDA9ZOzbrxnFMjAQcgJ2FOCpozIlenWCqN1LK430k-gr~2nMOmGjw88kJZr9d6Bz4bolT3UcGS7U7a3H4cLMGuFV6pVbye8gLuhh9L097ILTuJgYWy2p4yAe1EYORI5Z~ugSwwaMlYevhb5JPkgRP0Q1u5gCpLy45l~bw29dlUjGFiV2~VFjkQ0s2UB9-4EyIuEWXx8PNUIjtjkCKIgdoNJa0GIdxt1TLi-yZdH4ymW9abu8TMxgffXrU~okkFjMt-wBeTpn2AW5XDMMY5rRzuYNl-UL-P3L3bNzSnKHgdTgHGHT1FmpYZd3~hGxx3iHrVLkpiPqT1QApdOhg__",
+            "name":"Real Estate",
+            "desc":"Disrupt the way you buy, rent, sell, design, construct, and manage residential and commercial properties."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/fee1/0caf/139d00f964a45f310c8fc8d68bb3789e?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fB0mzLRZJEvi8uklQxXeJ-JKw45l-9mPMH6tgseNkkx8twmNrOQuDpA014b78YtDWJ1LZvoTFCv-66VsgZNoW3KecCkfznTXxEkgMNCWJ-4uEcPQlfOpQHSS~hrx1UssMrct6I1PgqB6HQhsN7BFv~SaV7Y9~Pl3sKl93VS5Hr0Uc4QPfi1bI7~6mFkiU3OV0fs~IrOHTGTQDkY7ORL5mtf~2-ArhqtyYD1~qLW~Ub4w0TN3v20eQ0j2LoxaaQRz-7F-juxxUAksqG4WXgCZxnpZOj7~HJFg9w6vsmP99YBvWpAMbnImjje4uCpoDfxvnCsdH7QGQmpjybwPIkMlJA__",
+            "name":"Education & eLearning",
+            "desc":"Our Education & eLearning experts deploy highly interactive and engaging educational apps and software by integrating the latest industry trends and advanced technologies for a theme-oriented or game-inspired eLearning mode."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/9293/11bf/cfcbf191e05645fc691147c3158102a2?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JdkCS8729M9tz93Fns3DWyqm3Ii2SSMrKHRMQUF-F0GK6W5tEPaLzw2hQxBjZvAaSWel3xYTwlmMjsJQczFH6~0TPRIA2kCXX58BkBgEuZlZUCBRXJr9k9geJuKYHw1SrSUyemuEaVFJMRn0PLDg1KAStivnobYNul4pVpiZMOgIg8BdnyFZSuzo5t3TLW5yDvV7XbAMAZoWclNp84C-Lhjgvd3qEGlciMWD1t3GO1lvwWMO~wJPbZ71QlCXS7StYufORwTOIHadYzi2zS2rCbz7qSXZYXMdLjZ-~ZRu2ThJvajinlUiX1y6E8PExUlPS3QgQ-BX~aEst78bWfITYQ__",
+            "name":"Banking, Finance & Insurance",
+            "desc":"We deliver world-class digital banking, finance and insurance services enabled to streamline all financial operations and provide these typical services at easy reach for customers with a few taps on the screen."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/ceba/05bb/f2108363c17fd5aa3cf04c32ba02932f?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RCtaDpnz4On12HKkZJaUIe3YDz6cxf1~1QKGhlyhFeRpfbsdM-6ArI7fm0KrGvHXcEmjhR1bpXR2dNuYevAUcXSu8zj5uaKzP6PLI01AJoAsIrUiUV9m4-GSvlRoJ2SG9iGx8oCMaA24Gw~fa29loK3J8gteMBgUmlIFKCloQuPu4Uk1QH1Agb3XT9Og4u~74Mgwx3wuhvUDsCLOuSnksnDExtYjyq~ndNzmnEZ4b0t1ZuqtY5XXrDyr4ctYtpH2P7xvYMoVgxelkAZoX3a3ra05lN2HN2LDNPPzL5fcQA29~VhV44k-4NSYJqwlNmfAbuH6MAiM3vHkzfQ7swriHQ__",
+            "name":"Travel & Hospitality",
+            "desc":"Our developers are revolutionizing business processes by seamlessly incorporating cutting-edge technologies, like AI & ML in Travel and Hospitality web and app development to significantly enhance customer experience and surge business earnings."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/d792/f8ac/58d1e03a09f4f1d821e78fb7364a988c?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f~Q9rkLzy~FhjMNh~Jg2fO7ynoVjEiWkVcHAixBMcHHDxabClpLQ2dJfjVMhAVj4xHgnlLXMK4jupcex-sIxgCMekN5-iAwAMAn0ycXVaSc-fsJvEkEGD0uMQhxSvYx58p9FQDTA7bWhGyJ355nhNv42bMa0MbyZF6cd-hYlYtYJVnKoVeGcgNQiJILauMWYcH7Pc8fhkhGKK1WROct85U0k9UtEG2kYsLd2aG77WtP~Gg-HFRCLiLb9HPPoJ5t0FiBMIX1nd5vrB-jfVYm5EhwakM7ccq826RO~LpVMVliOksIdLgQlL3VuWlxCsrie9zTU7UDICAEXzJJdASyGZQ__",
+            "name":"Social Networking",
+            "desc":"Codiant offers custom social networking platform development services and delivers solutions for multiple segments along with attractive design and a wide range of solutions that boosts business evolution and customer engagement."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/c16a/ba71/337e13c2fe1caf8ecd72c6afb89f4cf4?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HdUfJtuN5lT~WBfsQPDki8AamyybYGjGTqfuDDyMDFCrAQ6eZjaPxhO6K44iuMY91Hf9xcjzX1C1sr7ltf6Es4CROlPhHUA3Xq7fy9SKQO4gpmeG8G-8TfuDbc9qdw2WsEkDwAB8kPVSKs07ZNyLrf0dboo4Wc8MA3WlHr5cERB42sY9UzLyxHGHNEb52e0qyQzuAI9NSb1P0SM14F1mLl~Ml0Ytm42itqIA0g9h0stvszEJ17qM-8-YyB-QwatjWMl4wkhh4lGpbzYY3t~zyf7xlFclB47czMcy1xtqwPQs7Oe8PALJjdMHB5buTzWTSgdzHLqSGMW~ZjA8Y8x-NA__",
+            "name":"On Demand Delivery",
+            "desc":"We build tech-friendly on-demand web & app solutions to initiate quick & well-coordinated communication between a customer, seller, & delivery company supported with the latest technologies, like AI, IoT, Chatbot, and more."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/db3f/3484/c707a6a562b16ca933fbccb901b99dea?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oZ0F71NnhLqYw68JRln1kKKGUNlKPkBHaKqklqjGAmgQYzLM5-1yxtPKM3jvNhRpdDzHilA6m09wRk1ShzvaBB~ZYyhy38Z7OV3dQ6ssNaebaBqje5tfw5hH6Nkwa1VNpZhP4N3yZfpW2cxEAGZ2Hy40jiTWnVD~r5gL-K8N0UbRUF4UJjBplnexAO6s9K1YNNRgJGtTyvYvaFieuTlo9gqgcaBPgkmJRz-W2trulvKW5E6Fb71qn-6oz4D8dtj-XI4oDuxC8NKr2YV0SeaVTmMnrd9h90Hmpa2rLa7HjbnRez2azWrWZrTkF63x59FJ41dDgQi93bK7sTAYmFN~dA__",
+            "name":"Media & Entertainment",
+            "desc":"Digitally transform your media & entertainment solution by adopting a guided approach & strategies to reinvent the way how your users can create content. "
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/40cd/00b7/12459a857578a55fc56856ac4abeffc4?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IFp84rPENcHaOTwXRAoJFSKHpSLMqr8hyuGpN0C80d5IuIwrKeTTHswrwPBjN-7PxHa953EX-w24b-y94nIiTiXAOSR~td0xOJnvv-wCYYd3J5IQDFrlBxqJcF63M1pvD61BW2Bxg8-6LCTmkqgwlXL5pU59cmayxSwlDyoSQWEzbSEqYyInu-YFmfgzqLQcN6vun55iZqe5694DVOw6J1wAhJdoSDqzeuseWV2BTHHq3lTtuIrZjNBna8107IeX0XTnquoGZdTG0EG9KyiF1bC9KzC5SVTKYtaigTyFFcqIQBQ8q9~rtDLKrxFQzdSlh7daDzMjdm6jupg80zxsUA__",
+            "name":"Enterprise Solutions",
+            "desc":"Our development team possesses extensive experience in developing business-specific customized Enterprise, Retail & Manufacturing solutions that help retailers, manufacturers, and distributors to streamline their supply chain and optimize business operations."
+        },
+        {
+            "img":"https://s3-alpha-sig.figma.com/img/fe82/af34/c545db296387cb3852bc1586e5585ff9?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Pux1Tlk8JFwceJRxvJ8n~tUHmYZaPEWRSzHF0JpwmxluH3frl7e4v75YJn~~c5QQBEJD7i3PVNAjYViKeyWpPm6tPDvGgBXlx1JEMEaeDIRr-PSBN7JxGpoW8giPL~AzkXKA4tH56hi2kXIOLo7sfXOPDOC5fzfz~BwDi2IY862SMB1wG9q0~r3-ADBFY1v6cn3aYf-thn3ZcEaGObHZ9d8t3F9E60dqtoYCqnnQXf4hYFWd8MnovfNR03nRGv7h7Qugb~bN-dblMNj8VqvCBmrrqr3yrq43gxGkqTTrO1b4CxQcefzrWvM9SS3soXKmUQHkrCAYVt2K5cyFzL~zww__",
+            "name":"Oil & Gas",
+            "desc":"We offer advanced IT solutions for Oil & Gas services that help our clients to improve overall quality, efficiency & optimize reservoir management. "
+        }
+
+    ]
+}

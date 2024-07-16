@@ -1,0 +1,64 @@
+.indus-st .home-des {
+  margin-top: 0px;
+}
+.indus-st .home-des h2 {
+  margin-top: 180px;
+}
+
+.indus-exp-card-img {
+  position: relative;
+  z-index: 1;
+  width:100%;
+  height: 308px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  
+}
+.indus-expert-cards {
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .indus-exp-card-img {
+    position: relative;
+    width: 100%;
+    height: 308px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .indus-exp-card-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    transition: bottom 0.3s ease; 
+    background: linear-gradient(180deg, rgba(1, 54, 175, 0) 21%, #001D5E 100%);
+  }
+  
+  
+  
+  .indus-exp-card-img button {
+    opacity: 0;
+    transform: translateY(30px); 
+    transition: transform 0.5s ease, opacity .8s ease;
+  }
+  
+  .indus-exp-card-img:hover button {
+    opacity: 1;
+    transform: translateY(-20px);   }
+  

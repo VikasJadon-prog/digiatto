@@ -1,0 +1,52 @@
+[
+    {
+        "img":"https://s3-alpha-sig.figma.com/img/1bc3/8a7e/c417ec8161b0a3859903120e875d7ec1?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q2EabqYP3Fugi5nXmtl0G7UZ3ZQRunrsnDp2wvucClw2FJTztK9tPGefSYDhs9n9pr0IXLHy4OSKmeC9GiVsHhTfEsLyc7FbYj78SRguyu4FMVyFLSgYrsBzZSCwl~oP8NvNDEPZc6~hTMjTde96p1YdejK3UZs5Ks~tImE9fmV8j68HoUGre0jO-kX9K6XsxwuAcnXqOC0~x6iextnQG1rur6ogwRcUovGUNzpx7WZSWAATxRZ127WxGac69OjK3KA4wYvBMByXEfHnvAqpmOa749f0dyR8~K07XlBDm-7ETHbm6YV6K1Cud3oGEpvYr1Gwn-EWshC0MPj04Y7rww__",
+        "title":"Beauty Industries",
+        "head":"Good Vibes:A Luxurious App for the Beauty Experience",
+        "descp":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+        "img":"https://s3-alpha-sig.figma.com/img/8bee/a34a/cb0136c64d0045e7a96778433486ffb7?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i1J3WBEC6xNaI6b7DDKZB0lF0l~dpVLfQh30MupgzocOcg~HeL~qE25JRp01YYmp75MMkLnEqJurv89XuIC2UElQwEgKXF-pU7eG7MWl2or55rl3uzTSCq7HIH5UFG2dlgjlvO080G5m-VqP0Vd7pNz9SbE5aaqbg8KNy5twm3I8FLYSiNRFSOioCWPphVwJ4F6vYk1EEWNnMSSLoJcheKNKT1JEzM-WHIfn~5mhEGivzo3p95nVh6LfAoenwnzYo2EPRaQ20QsQuAbdyTLkjxiEhEMgbDVjk6OuU8l2-Tttegj2TIoWRAoRg0FqW~fmU9gKlW4y-RNBsB~ftHqXTA__",
+        "title":"Health & Wellness Industries",
+        "head":"Virtue Care: Home Care Application",
+        "descp":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+        "img":"https://s3-alpha-sig.figma.com/img/55b0/9864/20b844a3f6d2b58e5fef2f0a4e62f5e6?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NVk4DPFLKpFKjTDwygBklA20dTjrYwivX7yzR~o0HSSQ7w-vY52g74Gy4WB2404pAYmIwHWImIigU6QNhXvGOdKWttXVXU-qW76cLNcqpTbi3MpNFGEAmdR06dwAJ6ZYoUwLg2H2bMfdai4KU5PZ4gAQ36tIQN32QI0k6rTQiyy2xFuTYS6sJnk22-PWVMOEzbKJdlv2JwV5we3JDBCbl~IDASI26b23wR70fkkF13OY0gJ2nZ-CnSGsaXA5ud63IbUysnjCxNeojepyp4A3cgnJ8Rpd8T05tQGBvnt9cczlfiSIqOSmW255nW1~6bWu9a4cEkD1u05a9LxXtcPKXw__",
+        "title":"Media & entertainments Industries",
+        "head":"Real Rummy App: Deal Yourself into Exhilaration",
+        "descp":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    
+    {
+        "img":"https://s3-alpha-sig.figma.com/img/fc67/8942/c15cd8224f46a7a06b8a043864d73dee?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ehF0SG3go4W92tV3WiRmwefHppisvGQFq9fgPNpb1~uOQKJCYChOWoZklCJAA-69IiRd8RajL~8kxpo9D20RKON5UQS9XVADYr8RdUBySUtL-grBE-5j5CIFLuciSa7bbs3uH04BlktlAviQsuR5bwlHoN7B9c1y2jx-SA73KPE6C08mpBjHcW6buCRgVM~Vz9ibUw8xGdLoY3uRoAx3h5b2u35WkgupBV8--vBgxnrijtbgaO94AqQc6hjTgxI0vbboZUKvVwq6V2GGA5Pnx7QGPbuKwe-mIiU4BLO0kxkEWmaKiaJ2WD6uzh06OmDuvy3S-eZKoYOJqKBex-9fgQ__",
+        "title":"travel & tourism industries",
+        "head":"Tourism of Turkiye",
+        "descp":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    
+    {
+        "img":"https://s3-alpha-sig.figma.com/img/55b0/9864/20b844a3f6d2b58e5fef2f0a4e62f5e6?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NVk4DPFLKpFKjTDwygBklA20dTjrYwivX7yzR~o0HSSQ7w-vY52g74Gy4WB2404pAYmIwHWImIigU6QNhXvGOdKWttXVXU-qW76cLNcqpTbi3MpNFGEAmdR06dwAJ6ZYoUwLg2H2bMfdai4KU5PZ4gAQ36tIQN32QI0k6rTQiyy2xFuTYS6sJnk22-PWVMOEzbKJdlv2JwV5we3JDBCbl~IDASI26b23wR70fkkF13OY0gJ2nZ-CnSGsaXA5ud63IbUysnjCxNeojepyp4A3cgnJ8Rpd8T05tQGBvnt9cczlfiSIqOSmW255nW1~6bWu9a4cEkD1u05a9LxXtcPKXw__",
+        "title":"Media & entertainments Industries",
+        "head":"Real Rummy App: Deal Yourself into Exhilaration",
+        "descp":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+        "img":"https://s3-alpha-sig.figma.com/img/fc67/8942/c15cd8224f46a7a06b8a043864d73dee?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ehF0SG3go4W92tV3WiRmwefHppisvGQFq9fgPNpb1~uOQKJCYChOWoZklCJAA-69IiRd8RajL~8kxpo9D20RKON5UQS9XVADYr8RdUBySUtL-grBE-5j5CIFLuciSa7bbs3uH04BlktlAviQsuR5bwlHoN7B9c1y2jx-SA73KPE6C08mpBjHcW6buCRgVM~Vz9ibUw8xGdLoY3uRoAx3h5b2u35WkgupBV8--vBgxnrijtbgaO94AqQc6hjTgxI0vbboZUKvVwq6V2GGA5Pnx7QGPbuKwe-mIiU4BLO0kxkEWmaKiaJ2WD6uzh06OmDuvy3S-eZKoYOJqKBex-9fgQ__",
+        "title":"travel & tourism industries",
+        "head":"Tourism of Turkiye",
+        "descp":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+        "img":"https://s3-alpha-sig.figma.com/img/1bc3/8a7e/c417ec8161b0a3859903120e875d7ec1?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q2EabqYP3Fugi5nXmtl0G7UZ3ZQRunrsnDp2wvucClw2FJTztK9tPGefSYDhs9n9pr0IXLHy4OSKmeC9GiVsHhTfEsLyc7FbYj78SRguyu4FMVyFLSgYrsBzZSCwl~oP8NvNDEPZc6~hTMjTde96p1YdejK3UZs5Ks~tImE9fmV8j68HoUGre0jO-kX9K6XsxwuAcnXqOC0~x6iextnQG1rur6ogwRcUovGUNzpx7WZSWAATxRZ127WxGac69OjK3KA4wYvBMByXEfHnvAqpmOa749f0dyR8~K07XlBDm-7ETHbm6YV6K1Cud3oGEpvYr1Gwn-EWshC0MPj04Y7rww__",
+        "title":"Beauty Industries",
+        "head":"Good Vibes:A Luxurious App for the Beauty Experience",
+        "descp":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+        "img":"https://s3-alpha-sig.figma.com/img/8bee/a34a/cb0136c64d0045e7a96778433486ffb7?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i1J3WBEC6xNaI6b7DDKZB0lF0l~dpVLfQh30MupgzocOcg~HeL~qE25JRp01YYmp75MMkLnEqJurv89XuIC2UElQwEgKXF-pU7eG7MWl2or55rl3uzTSCq7HIH5UFG2dlgjlvO080G5m-VqP0Vd7pNz9SbE5aaqbg8KNy5twm3I8FLYSiNRFSOioCWPphVwJ4F6vYk1EEWNnMSSLoJcheKNKT1JEzM-WHIfn~5mhEGivzo3p95nVh6LfAoenwnzYo2EPRaQ20QsQuAbdyTLkjxiEhEMgbDVjk6OuU8l2-Tttegj2TIoWRAoRg0FqW~fmU9gKlW4y-RNBsB~ftHqXTA__",
+        "title":"Health & Wellness Industries",
+        "head":"Virtue Care: Home Care Application",
+        "descp":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    }
+]

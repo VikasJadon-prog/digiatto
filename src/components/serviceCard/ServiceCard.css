@@ -1,0 +1,111 @@
+.service {
+  display: flex;
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+  background: #000c28;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.service-hori .con-rec h1 {
+  color: #fcb61a;
+}
+
+.service-soft-eng {
+  margin-top: 150px;
+}
+
+.service-soft-eng .home-des {
+  width: 30%;
+  margin-top: 70px;
+}
+
+.service-soft-eng-lay-pic1 {
+  position: relative;
+  z-index: 1;
+  margin-right: -45px;
+  width: 330px;
+  height: 460px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://s3-alpha-sig.figma.com/img/502e/5752/2d8524b84e452b4fdc8586e7468efab0?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W8Mvvq63k5fSvpgkLzcX6uk7OTmOIsyjg0Kc-SyS~55LKsTK-e5kuZBAtFlWvhafXdXGMHTBp81T89~3FFEaHeQZyW6bEocXWZCAKPwj9e8~brpE2a~Y7HFC9dogKEChWWbgeLwKR~HArW4cTN-yS376hl548R1jbCTuMv6ucBY30i1-ccecH~~zwSyUBxQiVxS3RR3C9RcQeQ4aIzdQ84afzyOvTTWHl1LL1s09KiRCZMjHgwnKZKW2rJjPDbgTYHbF8InriMnZOYpDiOBEAlhFjGQGWArH-64U9NDOpSmeOXqg8ju493fEILbvTe3Wr5vnSFLl9VNYqQATbzaZZA__");
+  border-radius: 10px;
+}
+
+.service-soft-eng-lay-pic2 {
+  margin-right: -45px;
+  width: 430px;
+  height: 660px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://s3-alpha-sig.figma.com/img/bb72/605b/4beb73dd3841b7b8a12b6836ea62e4ea?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OuHhjV~ywc3X~syrOfah0BT0zKqao~gelobLytHRxjBkVmM-EyfI8VdOoS5hUFO9wlO2Ody-0k0z3hrBd33j-ERvQoHNwWmjmbk4V3D7dC0vJzIcJqBgvf1m0hkKkj~4-1ZMDEA2Pn2jl81Qz36rhH4xaBZUpv7XNJgCVvzqpbhRErJaIDYnu4bqaUmXI5IXC1NtqjSiB2ZAdK48b22ozeJgHEaRDrYvRiRfQRej36pXImgw~fJST~98PBm3OR9SC7kJfiCZGP5uDNZdsN0QsaXC9RO1DaWzacJzVFkhc3NciRMeGlQoWrYH6cGVGz6G9jDrAquF6HWhty2PSWrhEw__");
+  border-radius: 10px;
+}
+
+.service-digital .home-des p:first-of-type {
+  text-shadow: 0px -1px 5.3px #73708E40;
+}
+
+.service-digital-cards {
+  margin-top: 40px;
+}
+
+.service-digital-cards div:nth-child(1) .home-cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20em;
+}
+
+.service-digital-cards div:nth-child(1) .home-cards:nth-child(2) {
+  margin-left: 90px;
+}
+
+.service-digital-cards div:nth-child(2) .home-cards {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 12em;
+}
+
+.service-soft-eng-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-soft-eng-cards .home-card:hover {
+  transform: none;
+  transition: none;
+}
+
+.service-soft-eng-cards .card-desc {
+  border-radius: none;
+  background-color: transparent;
+  border-color: none;
+  border-width: 0px;
+}
+
+.service-soft-eng-cards .home-card:hover .card-desc {
+  box-shadow: none;
+}
+
+.service-soft-eng-cards .home-card:hover .card-desc-a {
+  color: #013dc4;
+}
+
+.service-soft-eng-cards .home-cards {
+  position: relative;
+  margin-top: 10px;
+  column-gap: 1em;
+  row-gap: 6em;
+}
+
+.service-soft-eng-cards .home-cards {
+  padding: 1% 1%;
+}

@@ -1,0 +1,106 @@
+.dedicated-dev .home-des{
+     margin-top: 0px;
+}
+.dedicated-dev .home-des h2{
+    margin-top: 180px;
+}
+.dedicated-dev .dedi-dev-beyond .home-des h2{
+    margin-top: 80px;
+}
+
+.dedi-dev-beyond-cards-pict1{
+    position: relative;
+    z-index: 1;
+    width: 330px;
+    height: 460px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-alpha-sig.figma.com/img/336c/ee31/a38f647b6e143cf7dab9246ce54e1735?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJkBLLsL4CdHYJGTra-lKr1EPjOZCj~TQYrkowSUy4tFBl2O7Z8sWaaGJz2vfDsgsBnxcfIdaPY99toFAu0WP6pXiI1wN5pg5~qIoVCZDtBnB6Rz6HjTZjpR2T4fFZ0H7LSZ9zUa9A7rlu0NjQVMrg4YRpIYfpSYLiAXWw2--NP4kHpHTUTq9wAufDQ9M~rIMkr1JgHWsaiFymKiaQDAkgQ92-5zGZoLhj240pfrtHH6XhlYWfRzB3YLX58N4qCZkcB-dJiinI3wOQ2T-nmQjPlIYdhMQ~CmoKKS9zadZaYLpog5rR-5RwUw4BTikkIONRQiMZ46S9rEfYhqXIckqQ__");
+    border-radius: 10px;
+}
+.dedi-dev-beyond-cards-pict2{
+    position: relative;
+    z-index: 1;
+    width: 330px;
+    height: 460px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-alpha-sig.figma.com/img/d09e/932b/dea0d15b17c8c823e5bb57c07d1bc554?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fsZKkLM7zJZUHCqMwLTkvFnwZX8R-Yi09KKGvp4TjZHsGblb1cmBtbQLKNCAyTY~DCG5ppD0AEKbcI3oCTkw07J9DqIZIe43Il4Z5KLJljk9XKup~rKhppupfGzr1NhNF~asL5EEf~RI9vZWfo55MO2oNyLdaOr5G7dquEHiXVEErYxnBbo8vvM5LTbZNizw74Ew3J8GjcBfh1yCI1m4qRnDX4X-bCX8DGbWma6nx9Rna67w-qEGjDB95Vp~CH1UuZMD0ezo-ZjAXGtxD5yRnkvwWsnCO9VYMRa5qwekp1wfOwFg4TonCEaxIv3vsFBi4591lwil6ULubKaWKqDKbQ__");
+    border-radius: 10px;
+}
+.outer-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between the rows as needed */
+  }
+ 
+  .main-div {
+    display: flex;
+    width: 100%;
+  }
+  .child-div {
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .hire-dev-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 5em;
+  }
+  
+  .special-image-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://s3-alpha-sig.figma.com/img/a0d0/7a1d/1d2b553e8c9e79c9d2ab675d85c073a7?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VDxSFprj78pPu9yBI-twkG~6Gy5TDqrZOnk4XV8ebzphzTuc02XJqamCe6U-xfhDS6j8c1v1EH~wDke1Qv3ZtsWGyLpEyA~Ixr39iIrmNJGOphBSxhMyzhNQdVjFwOiM1KO77mfFeyvYmzsp8ZUdQ6w8OBSxamQiIal4tezY-l3XJf6eEwtdCrmRfLce30NZ86fElKiZeL96DivxTaw1~NGfHHBM9C63pffJKyi~10BwZitX3xLm6teLJAWUAJzZOK04nh8UOK3d295pWqdDrp9a~fNE6Nch0VNT~e3HyganDz2~yCbDzJl57umalPxocnrPPaTQT4yWSEHiDBv12g__");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: span 2;
+    grid-row: 3 / span 1;
+    border-radius: 10px;
+  }
+  
+  .special-image-2 {
+    position: relative;
+  width: 100%;
+  height: 100%;
+    grid-column: 2 / span 2;
+    grid-row: 6 / span 3;
+    border-radius: 10px;
+    
+  }
+  
+  .special-image-21 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 55%;
+    background-image: url("https://s3-alpha-sig.figma.com/img/a0d0/7a1d/1d2b553e8c9e79c9d2ab675d85c073a7?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VDxSFprj78pPu9yBI-twkG~6Gy5TDqrZOnk4XV8ebzphzTuc02XJqamCe6U-xfhDS6j8c1v1EH~wDke1Qv3ZtsWGyLpEyA~Ixr39iIrmNJGOphBSxhMyzhNQdVjFwOiM1KO77mfFeyvYmzsp8ZUdQ6w8OBSxamQiIal4tezY-l3XJf6eEwtdCrmRfLce30NZ86fElKiZeL96DivxTaw1~NGfHHBM9C63pffJKyi~10BwZitX3xLm6teLJAWUAJzZOK04nh8UOK3d295pWqdDrp9a~fNE6Nch0VNT~e3HyganDz2~yCbDzJl57umalPxocnrPPaTQT4yWSEHiDBv12g__");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  
+  .special-image-22 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    height: 60%;
+    background-image: url("https://s3-alpha-sig.figma.com/img/a0d0/7a1d/1d2b553e8c9e79c9d2ab675d85c073a7?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VDxSFprj78pPu9yBI-twkG~6Gy5TDqrZOnk4XV8ebzphzTuc02XJqamCe6U-xfhDS6j8c1v1EH~wDke1Qv3ZtsWGyLpEyA~Ixr39iIrmNJGOphBSxhMyzhNQdVjFwOiM1KO77mfFeyvYmzsp8ZUdQ6w8OBSxamQiIal4tezY-l3XJf6eEwtdCrmRfLce30NZ86fElKiZeL96DivxTaw1~NGfHHBM9C63pffJKyi~10BwZitX3xLm6teLJAWUAJzZOK04nh8UOK3d295pWqdDrp9a~fNE6Nch0VNT~e3HyganDz2~yCbDzJl57umalPxocnrPPaTQT4yWSEHiDBv12g__");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+  }
+  .hire-dev-conte .home-des h2{
+    margin-top: 100px;
+    }
+  

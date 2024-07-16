@@ -1,0 +1,115 @@
+{
+    "domain": [
+      {
+        "name": "Visionary Minds ",
+        "desc": "Our team thrives on pushing boundaries, translating your vision into reality."
+      },
+      {
+        "name": "Tech Powerhouse",
+        "desc": "We harness the latest advancements, delivering solutions that empower your growth."
+      },
+      {
+        "name": "Future-Proofed Results",
+        "desc": "We build for the long haul, ensuring your success in the ever-evolving digital world."
+      }
+      
+    ],
+    "hire":[
+      {
+        "id":1,
+        "img":"https://s3-alpha-sig.figma.com/img/d290/6f93/53b47154363802ef73d2fc7511c215f5?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GUiDPhTDnB~QvXewf2R3YMwz7hOKBTFd6-8Qd1jlsOD0woil4EhYewpcjH9xYfRQDpxPJ8IrSK9mtf1b6cAeFwr-2OFhHEq1RrduRc8IZ6J-lWIY4-kDpBsCdpubyhNo5sDskvLhZGSA7ae-9y-4yjvWXhLDzNkfSeuf7XRg0ygMDU~awmIt6nWbuptyL-p-bOxsy27X4xT3GANzN66xHoxlYaPSOQ9O8NrJ8ySE7~I78Fib~BK1cKgf~TFcAidlo~XM10cJdMAGpZfJk8Xzh8UG8G3Wg8vLdDlIzxMnsVqzNiGdZi9jcy7Bx1mbJ1iJm3N8CdAMT~aKsUpcMeZ1tg__",
+        "name": "Hire PHP Developer",
+        "desc": "Craft dynamic web experiences with our skilled PHP developers. Experts in building robust and scalable solutions."
+      },
+      {"id":2,
+        "img":"https://s3-alpha-sig.figma.com/img/c857/0c44/180da7298ac10d472a6da796fb1fad7e?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AFlUuXowUlmd5JDXluSPT~yAdI0o3OWSs1BbMSGxbMJyyMAT0aEerXVMMzuS69ztoMSFCm8aIa8M9RBZ51ysYwLP~XHBhCn3pETDEKl0RQg6ymDETATFeSAk0zAW3YYATXnXVbo6Fi5h-H63pVEk1eVxU1tXlsjEvjuJVMRiQ8O63l5WpNin4NPEPC9c8ZzUzqxNttzzoVU4sUGgqr8M5fK2nuxxdpP~ypK8i~OsLHNNVOyvMk7y7bPXHbk0EDxs5LZfvQFKQyx5F7FBQtly3xYfk8uNlTF8fkN1T9oSyvg5tQG0LVA3z5Pw~hlJmsRJWNrc2SGNno1mBpOqi3aMKg__",
+        "name": "Hire NodeJS Developer",
+        "desc": "Turbocharge your backend with our NodeJS developers. Unmatched performance for real-time applications."
+      },
+      {"id":3,
+        "img":"https://s3-alpha-sig.figma.com/img/28f9/2cc7/5a36459f757f178ea577b6710f90c0a2?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lGVmr37KyDzceS37s8fHmHprPaaCuI3OU1PLULI5DP6GqzFNNyrStlpMKVF~jr2vyEDhYjKsTR2DNzNwouy4mGpnjIX4TmsEAiBJU7~JcZQIjW4HlqoingRi~QBedx8xlM~SeAIDep4hldtrQ4UG-GbjKDKahCNwEbzswovYw8j6bNphzIWQMUUXLIeLiSBFrbnLWBydrnPqK3GaTaCFWDTOtzrBXk0vn6rfqsuCBb5lohxVV2avGMuVQc8gUmvGIqU~~sSYyDDF5emgv5edSj1WTYJNyqmt~trMQ7M32YkWj8S48gs1IhO1HHQWRAivmL0sqv6wnutp1tt7Dsbw~w__",
+        "name": "Hire Python Developer",
+        "desc": "Build versatile and efficient applications with our Python developers. Masters of automation and data science."
+      },
+      {
+        "id":4,
+        "img":"https://s3-alpha-sig.figma.com/img/3299/3dd3/8e046ed6079fe948756f60ac0636604c?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o-6rG5ZnagqqJYPCSRD-dMsVsZVusvupkAI0kiizoUbX9KpbUpReKJwBLUVvLkEgNB-FFnd9rcIRmk6jMvrxz1HYc1L1X-UtDcKLHfydY22KFPrR2y9Xk2MPV1CINE5Bd0Qbgb~LtpHBBwfs4a0x1A0JJwX0Ha1idVb-mlrYpS~pAD1d5MsQnL7Xq8ZtywLVkwW8vEvbiWHN0YHGEpaDIt9kNpk2VnmEXahXAxBGN6YpOS-xcJbB7f3PkkSTQwnYh0QIiUEQb0-z8pIVrX4UCLPBZOMVYw8NIv7R8ZnDxoWwif8SnJi45PiWmrWsaRQWqnfFC2HOWDAyfk~oLRy4jQ__",
+        "name": "Hire iOS Developer",
+        "desc": "Captivate iPhone and iPad users with our expert iOS developers. Native apps that deliver a seamless experience."
+      },
+      {
+        "id":5,
+        "img":"https://s3-alpha-sig.figma.com/img/4227/c9ba/b3177833c261fddc5e884dc021ea2507?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KQbnu51vrwiLPYPR2HjSm7jHgxf0DThQBj4yD6Ys7gTMzIRyaeVXAAL98brSJTb68ffATFPXufXWT5YkV5kNoStdGAebVw6GOHJBEfzOhr5etjNUiu9OzRThX~FVHH8o0NyfyE-Xn1NnXXhKGlODuxhST3GLqwDJgn-5k1r9061Gmt-k4vPU-4TjUKk4uh831BrWSEFtD0Udh3QYyY~86T56RIs5r7zuj7YrbDsbQ322qkipKA~v6sQFfx-tyW~jegBfUsHY8eQo3TkkrXgbajxw~0ALXjS6HSR2dx6wJ-2jNJYVZjBoMZFGFTrG9-Kbeq0VUb0mG8pMHkhkAd02Xw__",
+        "name": "Hire Android Developer",
+        "desc": "Reach the vast Android market with our skilled developers. Build engaging and user-friendly mobile apps."
+      },
+      {
+        "id":6,
+        "img":"https://s3-alpha-sig.figma.com/img/e6d7/9033/657620e5ef8e34e926059406ccf426ff?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jEGLdS3C6f8k8VPzXpKfZ8LeZIsKP2ElbJji5pDyLFMAekJMdpJfhVgePBFTj88P1Oxj7WOQlQ4U1pHJf3SjD8Vp~So4Xjz4N0E4CELH71fxyNDMH33dU9qOwUIEcMnuPTZS83JhQUX~C9scUrleQbzL7wDB37BfYfh1jWN2JGcSch4kTsxIVUb67lDfRjVAy3m4Xa11OoBPF9EsXJZI0PTo~swR7pIrg6bDk~rcwn7WcfW083OJjxvyPfAiv8ZtLXBPYbud9CS1NNyf0sPiC5xAh1mR~bY5RX6jfbAMX5nB1lWRCiZHbaP5AsXtWHAFjuxDQQOMnGVIqQfDPIO-3Q__",
+        "name": "Hire React Native Developer",
+        "desc": "Write once, deploy everywhere with our React Native developers. Create native-like apps for iOS and Android."
+      },
+      {
+        "id":7,
+        "img":"https://s3-alpha-sig.figma.com/img/776d/61eb/3151d57401ac4a492f34667721e65030?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QOmQH~XN5FT-kgjdSghVhW0ilojMjsY7EnqK~hk0GE4qw8lzvZTSlP9VyosgPUhYKfOjqV6nBf4UmD1wjgLk9F8ZyUDg3ofleyoU~oiozZquuhp6BcfNXP4TuS1Vx9K1mPCjVinRA1l8UgTpfqzRTBLFI-eJkXRZF2TVSjoWTBjcm7Ii86MZb4oGM0ySIbxy0bK3HwD~6jNVU4f4uGTZtCju4Ht1avgI5qbbJk~y-dHjknRomOcsiGs9AVm1AkTK-ph0-Jgl7IJ6T4dCtMvGSPC9Oshr~CEDvXoj7ungpu3v~tgFUEWXZE0D8GuLKINh6Lf1QF6QAZCodOBncu~HuQ__",
+        "name": "Hire Flutter Developer",
+        "desc": "Build beautiful and high-performance apps across platforms with our Flutter developers. The future of mobile development."
+      },
+      {
+        "id":8,
+        "img":"https://s3-alpha-sig.figma.com/img/e6d7/9033/657620e5ef8e34e926059406ccf426ff?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jEGLdS3C6f8k8VPzXpKfZ8LeZIsKP2ElbJji5pDyLFMAekJMdpJfhVgePBFTj88P1Oxj7WOQlQ4U1pHJf3SjD8Vp~So4Xjz4N0E4CELH71fxyNDMH33dU9qOwUIEcMnuPTZS83JhQUX~C9scUrleQbzL7wDB37BfYfh1jWN2JGcSch4kTsxIVUb67lDfRjVAy3m4Xa11OoBPF9EsXJZI0PTo~swR7pIrg6bDk~rcwn7WcfW083OJjxvyPfAiv8ZtLXBPYbud9CS1NNyf0sPiC5xAh1mR~bY5RX6jfbAMX5nB1lWRCiZHbaP5AsXtWHAFjuxDQQOMnGVIqQfDPIO-3Q__",
+        "name": "Hire ReactJS Developer",
+        "desc": "Craft dynamic and interactive user interfaces with our ReactJS developers. Build modern and scalable web applications."
+      },
+      {
+        "id":9,
+        "img":"https://s3-alpha-sig.figma.com/img/a8cb/c6bf/3cff27f28cd2dd634a0356a4997efc0f?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KabJIxdXDDzHjNp~6VBeYsLbpK9p9bVCD2HEMzW0I1uaKoq2vG-btCicDbhrhy4ajU5y-fKYjNtSP-riS6wpR6xn73jIYYPTPeg26GlweOvkGOUrMXRYqsiYL6c0vWDDbU5cZBAWibKixmqcBHQzOGFOSHF4h1Fgw1NDS2rTw4HiPvA3D1N4D8iZtPo2msypMqcF5bL6WS0fne0fpZIRsvbvK8TC8HyAZTvpfVgJrvoxGN-tXZ-LU~V50YJLHniefb6A8oHQA8OcWZiPjj~PVCXWsG6aRw7An-D-VVEiQXUbXcdoaHibGdITu6py6t00sqG7Wfv2Zc~NpQeFYn5fkw__",
+        "name": "Hire AngularJS Developer",
+        "desc": "Leverage the power of AngularJS with our experienced developers. Build structured and maintainable single-page applications."
+      },
+      {
+        "id":10,
+        "img":"https://s3-alpha-sig.figma.com/img/c68f/c820/3776729a5e4f15bbbb51ee6043944dc5?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZBwyDzjtuiRNF1NsoOU9g~-aoxVc1hKXoM0PvMLhYV2SwJz1-AMjLXmOWATXkJboIKr-ii9eAqsVtlJlJ4Oz~R~T-tJo6OvmE-Ens~kOh8V3IK5fdETmomNuX6eQLSfXRvGd~Fs0V5TLHPkrdOErjYCThM8MT404Ta~P29oniR8fgt6lvcZ8sEnoAMvSQZGaNEIl5xitDOj2VkG5IVqk4MyJ~18TjAdNdidI4VuJdJoaYNb6mGPAG7vi4xoGp6A5Fvfay7qeSQfQVjsgnSIZrEVYMx0v2TBWRvP5Vxr2BV4bCfSI0R2vdtXipuLTQ7lG1uF28~MODp8U9UxGOTNEMw__",
+        "name": "Hire VueJS Developer",
+        "desc": "Craft dynamic web experiences with our skilled PHP developers. Experts in building robust and scalable solutions."
+      },
+      {
+        "id":11,
+        "img":"https://s3-alpha-sig.figma.com/img/f05e/c307/47b092a3883b3c9746475fee65bf3b2a?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V-mEwitV7olTNNaOhjX303QAYpvDXBpekqkrl7DVqL~xDpg1p7et-V-a8-Yh6v9KwmhaYubrE5e1dbA4uwc1XuPIbV~BE~Ui2VhWlaBVIpAOfusrfhT8MkXjNdjySIZ6VdsLZr-x2L12Qtstav5uhrBk-P652bM1jXD3fZvEagD5jUk1hz6BFOP-TlR2O8ZDymDT74-kVftTCXbyBFp8y4UoVScBWJ38CogXdXQgIjNNgNUPSam2nxoCEzqJ2bObTfx6TuFFzyNTPXBC3DMGGjYGie9zndN~6iiEvcqX1ppAlAqp10HIQKcm9uNbMWSwDKFL6sw7wh1Dw~yr35RGqg__",
+        "name": "Hire Software Developer",
+        "desc": "Find the perfect software development fit with our diverse team. From web to mobile, we've got you covered."
+      },
+      {
+        "id":12,
+        "img":"https://s3-alpha-sig.figma.com/img/4bd4/b6b2/6fe0ae476c8d748017ef2e923efca3de?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hehEK4AGO~sn5eoCSC8RdzZYa-7mILiaGiYb-QKh6o40nOmpHdv3HmgZ6iiSXYqx1gHDMvmosyRJWAdFAZDv2Ewar4UBxxrpHy2E0fznoUfdcKkkievnPVyr7t1v98xexPzB4axESNEATDUXtZm3LgyCSqT7SUCtENLKmGExOlw0DPcRlQuCTfxqflIYs1il92Ye7miKS8yNV3VLG4FL6Kk5rdf0wPXnnS3d~RYhG5XAyUKOM075MAbH-XhjIhq141oFkIVj5LlesjM4M9ON1Pu-~dYM16e-AInI0g9iy15kaMl41d~3bIH19JtampCb6vxFAVo8Guj~F8CGsc3Ihw__",
+        "name": "Hire Full Stack Developer",
+        "desc": "Simplify your development process with our full stack developers. Experts across the front-end and back-end."
+      },
+      {
+        "id":13,
+        "img":"https://s3-alpha-sig.figma.com/img/e4d6/09d6/c0eb07c871acc5859e97bc95e1659761?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RpT5MngIlvcXEKtGUUV1cwUJkLEZXFK8BDsuZQ-yKXWywSfiu3HifIvMDPWBQaVTVvbz4LSB53o8KG~zKFtJtPayJUaaSR~ke54lBzI1TnzXvP1uvJHVqS29oAWY9PDMCT98Lqi1Omb9oSsJZ37s85jeUxPfF3Oxih9uQqYlCcQIXXKPDF1zeNwzv087NBn5~iGMs7h2K0~UMJfzlB1qS0Aj9lZOtlRR0vWf59MhQVtUpW~nV6~tRl0WAqap7hkx0yg0EYTrEm9DkA9DGmvei70yzqR~cXR1jf-rvFr~DWo~s9PtWpE-qaltIb2L~wdfNljwOBKXEsen1O93VU49FA__",
+        "name": "Hire MEAN Developer",
+        "desc": "Deliver exceptional web experiences with our MEAN stack developers. Leverage the power of MongoDB, Express.js, AngularJS, and Node.js."
+      },
+      {
+        "id":14,
+        "img":"https://s3-alpha-sig.figma.com/img/a1b1/cd9d/a752092231e05de0a38410278bcd175f?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ad8TybKqz3QpPJZfpIBUMGFx5m3lcXQVZutRVusnv7MLK6NfcXCOHkvYMIwcCYHOxfl1zlJ2tQPvGc8PC1KD9SFYMbJ-dciBNw6CjscsHkvmZpRLqI68venL6~NagKaSUrhQsx~WmkgRQb1TPSqV6RQdZPBY6G9PLrlfJRdqwuE4Drj0aStM3nb8hJYTGjKgEeCbtINVvd9Ft-Gz6j02lyKeeGWafnVYNG2Jdz-QhhI4ySh0U7ReUyMTQAGbmG40Vy-fhDDORmNmXYCnHNN6hWna3BaNFrvc2G1Flif8oGs4wmiu~7kx0RWX-4jA~W7a8mz3lCb-Dw99yYA0suxWjA__",
+        "name": "Hire MERN Developer",
+        "desc": "Build dynamic and data-driven applications with our MERN stack developers. Experts in MongoDB, Express.js, ReactJS, and Node.js."
+      },
+      {
+        "id":15,
+        "img":"https://s3-alpha-sig.figma.com/img/2965/0931/b9374237e30e7a736211355e8dc297dd?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cs0AQtbIbf8VMFh7CiIhU6gmp-sexC0PhvS1YxS3OtA59lph3xnooBpBfnA2n7D6tHBq1KZphlx8kb4aZ6S0Q4aenCx0hB0vMebk4prD~dhfGePLYGbf5VB8Eaz1YXi3xI6y32T-tNb-JLOtGh01sLj1YvwED9V9LRQiPRoK1K5Sgg2ovJIuOtq6L5JDZawb0~B7tirJSITLA3GwGzwvgnKREsFA0rmyJEi5OcjS2sbTQHZRJOVs651rxFS5I2lLsvzhFRs4ZivAB~0GJ8xUXRej-h77LjnYgmh0~aHwfX4Pi8Ct66zqA2o7pk2lN2xRzYftBTOetJxlgukSzqu-Pg__",
+        "name": "Hire Blockchain Developer",
+        "desc": "Explore the potential of blockchain technology with our expert developers. Secure and innovative solutions for the future."
+      },
+      {
+        "id":16,
+        "img":"https://s3-alpha-sig.figma.com/img/2d52/2d5c/57a00e564459697ba705fe2390d790e3?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UqwCVV03cmyRnsnNSlTbOdqn4RcX2mb3VSaZz9DgSf0l1MavNgs78Lv4r7GGz3qwtI9~FPAZxKxfLJIGYIZn~UqujUPLzQS6gbT0sXw-5w2Sfi~4LgBir7cTOZS1PfecBmxNEG2cKfx8G5D996XM4OGf14Dui22wdeFlXtcd4dTBrE0UZLTLD5W6Vx1nymmVxtzDf0LheWlAUruiEEoiV1fPhW2dPZf~-6OHyYee0D8hn7ftkks2FUAOywo~DF8QlsOCkD0GZhv0DxJAWb-tPoONyQe6IinmrswgxoZMs6H-eaAaW~PC9PxqvJ9FQR8m4hfWudtkSZHnQBhmVLGp4g__",
+        "name": "Hire DevOps Developer",
+        "desc": "Bridge the gap between development and operations with our DevOps developers. Streamline your development lifecycle."
+      }
+  
+    ]
+  }
+

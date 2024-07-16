@@ -1,0 +1,25 @@
+{
+    "domain": [
+     [
+        {
+            "name": "Digital Transformation",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+          },
+          {
+            "name": "E-Commerce Development",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+          }
+     ],
+      [
+        {
+            "name": "Digital Marketing",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+          },
+          {
+            "name": "IT Services & Consulting",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+          }
+    ]
+    ]
+   
+  }

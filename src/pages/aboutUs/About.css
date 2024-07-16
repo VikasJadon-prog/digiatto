@@ -1,0 +1,160 @@
+.about {
+  display: flex;
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+  background-image: radial-gradient(
+    rgba(47, 32, 200, 1) 1%,
+    rgb(0, 16, 51) 50%
+  );
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.about-inner {
+  width: 100%;
+  margin-top: 130px;
+}
+.about-main-des .home-des {
+  margin-top: 90px;
+  font-family: " Profanations";
+}
+.about-poster {
+  margin-top: 220px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-poster img {
+  width: 80%;
+  height: 85%;
+  border-radius: 10px;
+}
+.about-exce {
+  margin-top: -30px;
+  width: 100%;
+  background-color: rgba(0, 16, 53, 1);
+  border: 1px solid rgba(1, 61, 196, 1);
+  box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
+  padding: 2% 5%;
+  padding-bottom: 10%;
+}
+.about-exce-timeline {
+  margin-top: 100px;
+}
+.about-map {
+  background-color: #000c28;
+  padding: 8% 2%;
+}
+.about-map .home-des {
+  margin-top: 0px;
+}
+
+.about-map img {
+  width: 70%;
+}
+.about-map div {
+  margin-top: 100px;
+}
+.about-innovator {
+  background-color: #000c28;
+  width: 100%;
+}
+.about-innovator-desc {
+  padding: 2% 5%;
+}
+.about-innovator-desc-cont .home-des {
+  margin-top: 0px;
+}
+.feedback-card {
+  background-color: #001035;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #013dc4;
+  padding: 30px 20px;
+  text-align: center;
+  width: 250px;
+}
+.feedback-card:hover {
+  box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
+}
+
+.feedback-header h3 {
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 2em;
+}
+.feedback-header h2 {
+  margin-top: 20px;
+}
+.feedback-header p {
+  color: #fcb61a;
+  margin: 0 0 20px;
+  font-size: 1.1em;
+}
+
+.feedback-rating .star {
+  color: #ffd700;
+  font-size: 1.2em;
+}
+
+.feedback-users {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.about-innov-left-card-up {
+  background-color: #001035;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #013dc4;
+  padding: 20px 20px;
+  text-align: center;
+  width: 250px;
+}
+.about-innov-left-card-up:hover {
+  box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
+}
+.about-innov-left-card-low {
+  background-color: #001035;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #013dc4;
+  padding: 20px 20px;
+  text-align: center;
+  width: 250px;
+}
+.about-innov-left-card-low:hover {
+  box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
+}
+
+.about-innov-left-card-up img {
+  width: 20%;
+}
+.about-innov-left-card p {
+  color: #fcb61a;
+  font-size: 1.1em;
+}
+.about-horizScroll .con-rec {
+  margin-top: 10px;
+  background-color: transparent;
+}
+.about-client{
+  padding-top: 100px;
+  background-color: #000c28;
+}
+.about-client .home-client{
+  margin-top: 0px;
+  padding-top: 100px ;
+  background-color: #000c28;
+}

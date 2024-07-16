@@ -1,0 +1,12 @@
+.contact-left-small-deev{
+    background-color: #001035;
+    width: 45px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
+    position: relative;
+   z-index: 1;
+   border-color: #012b89;
+   border-width: 1.5px;
+    
+}

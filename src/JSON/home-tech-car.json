@@ -1,0 +1,130 @@
+{
+    "domain": [
+      {
+        "name": "Mobile App Development",
+        "desc": [
+            {
+                "tech":"Language",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            },
+            {
+                "tech":"Databases",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            },
+            {
+                "tech":"Frameworks",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            }, {
+                "tech":"SDK",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            }
+        ]
+      },
+      {
+        "name": "Application Development",
+        "desc": [
+            {
+                "tech":"Front-End",
+                "img1":"https://s3-alpha-sig.figma.com/img/1f47/ae57/8ad8ecec1b563e5134c7317129247a72?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HBB3tlhp8SFUPcjW2OuLOfhGGMkDetJGDjYhLSYB0Ed9ObO6R1KqArQZFejvXZNCxW32jODrqChEIM~RwIBHDH6XUPuaBY-phTc4y-wrFCXPo5D07hpxOQ2~8Rhmon94-NF-8tI11-hqCl1~i-6V45-BChLLln-osB~4~qOqlZW3BdRRcfP-iXZfP3KLFiW-u4OYllRARIB2tSU0sYrbuEwu8Gb57NE6ozzfy7ixQchbnH4PHfTmMvAlTKOJvfhULxk5RlssPEKsDcn0epjbVzfk2PHHhVYbiUeUn5ypR3i7vJAqISt5hlUMKZMAaQ-yoSOdVdeSf5f5nXb39gHeig__",
+                "img2":"https://s3-alpha-sig.figma.com/img/4975/3a5e/75d44daaca26639144f27f81fce68b64?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CtiAE9pWJL-qYdb8t56Tsh3te~xH3MBKDvpKb-WrsI3ORuGXvEvgwnoy9hniciJFSJtZnmXsNbsOkOkNqqgLYWdDeBwHT-E0dI~Wmzr7fSnavxdITpA~i4Zjj5mZapNiFnXL3f-8~oGVxc28j-PJHuFDXJKgTGJ15j3QNNFHIBWitJAEJS5CgX7zEzFgnfn1mU4HrO-kcSB6gbcB07FYmClAdb0RxUKMx54IGu35Q8Xo-6xATXZbvZ1Ca9BAWiOKKpxK1OFzAoax1DxlJTl9Zfo3N5pA7iYNPwc2yKoq2HNBzc0Jr7ZQbl11oSrWNReuuMOUSJBvsgAva57d2zPCQw__",
+                "img3":"https://s3-alpha-sig.figma.com/img/9edf/f920/146fbbbf88f2d8ef81cb2f7b9f33d2f0?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SN9Op4I7lpSalUejITYBHYHg-Dx3Dd1QeoT2YeSjAKZmy6KH0aM3g7NNpWl35iw3PtgAL87-jSssmSbw7drAtp6xaWMrkiX0Oa0PX5DnThA58naINWw~6LlSCr4HjUl0eU1YkDR3rTZh4keKPi2GePSY5yoLUU~akogabll0Lp8smmRgvebQfrb98BlBHElLRIYPOqBL2vNCEDrflit3G2QACz0Qi4d4y-OxGoqSXHYpgTZH3-RraofUz-UcHQF1zNDDkDcSHoZ8j6i4SlzP~pHl6oE1buylvj9Fv2pv7jmd~Tbm4bbqqAOSqfr0lz0-hYcDo210v3n3PJH2kc2IQg__",
+                "img4":""
+            },
+            {
+                "tech":"Back-End",
+                "img1":"https://s3-alpha-sig.figma.com/img/4bb3/4e35/571042400c454e99702603b74705ea5b?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iHWsEedPM~iIfJdpV2qd6yZaLLYP7I1iiusBFC8hK6Waz3pvaHf8ZxaFmpEaSDZA9TCDwktoEHYcLjoI29n-jMwQ1ic3ZFMfUCjdcTob7BIdcSssxBdFwHWvSIKo2ovG7jabarrMeQyRwqhUtKNRvVPRygz49lFbbXf5VZYrtZ2ikoTvKIGy3X4CIkVE7zCoMtHPngG4SHcsI2hl4-f43SuqmfGyVdQFD3j7O~XRDuSqjl700esScR6H4V8Evk85LgrZEyWk23iMYcyR8sQJz3orItDokbMg4YCjldjEgRBsnEDp-Tfqboin0D11yNaOGy8OJku5zLxWLgJixGbZyQ__",
+                "img2":"https://s3-alpha-sig.figma.com/img/34c1/b7fd/fd926d6fe233d9408654c9c2416ab713?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RsHVBu3NV1fNbKJBvQDbphXaVBXdj9yk-NNMvi0AntH4Eol8AfRj4gnPRps1KRrw~J5dzN6wdSC~MXvcEOqyFIlGzCVEs~WeQgYXH8NBJXsdtaEBUmfEuhuvVD4DbUYixo8Rp3-Kxz8IyJrgjDlS6RtLUM~aibiDL4bJKKFSm~wouFsGuERRy3U77ReftmYkU4nnlxiyS9qa-VLS~0kKrr1sCm7NHDZb4U66Vapz2Qo9BOaMiM4shz-c38SgxGY3ZLyE8OVz-5xOY6sRjiz6bAFJPs4ZCQNDPYbVhngdrTZIDPfaVU-szeGK2RWdfehAD26bIBRxTw8EC7VzjwsUDw__",
+                "img3":"https://s3-alpha-sig.figma.com/img/7ae9/c5d0/388943e7a09158128785c0ae71cf69f0?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AW5NBXGFK5UkTnjULGgwfAVR9CS0DHm5593BirQ90EnTjVq2qbRtkKf9l-iUCU~MYob63n8CboPIB0jgJ97Xy-gRY5AcoSd~ybnXqWHYfxxmzM7-Atp0hnre9gWJKqZk7C3aftgDV-GbVo713ekLg~PpUk1NLofVhxGcvgi4E-gL4EmVYEZwvKDQqFnSMBINqDgpR3aRfRKF-1eMUQIAX5VEtsa03X1LaXFRK7FIGDz4TKtd67zLeN7wqZOAy0sP~GkTId0apFBPCUuwWtTVwbUieTlM4ArzXm8Q6~getz-zPiqag~8rMymtGcarqytQGepmkHuRldqRaR3d3tjrag__",
+                "img4":""
+            },
+            {
+                "tech":"Database",
+                "img1":"https://s3-alpha-sig.figma.com/img/7da3/791f/64e39ea02ef87bf168031716374cebb4?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j46i7I-lO~msi9AiS5FoVhQBI-AwEG8L4l1OXDjyjKaeswNSQCi2ZGQroGXYJRE2yuL4Mz5uqoJMTrRPhmnHqffB6wvTSZf5cRcf65zlLgIn9uClI5bIKt-MdQOSptS-JOAfM~btpxXtZb0iWtfdZ43buGsBTkxd1yqSIcmb~QZ3P6eI9w0U~nlCSSAJBCwqjfPjcSM08ysjaoxEsfvO8rVWp1V1ihmVKeux-SId8PTQUj~COhKxRESLgcEwtpRVGjs5PNScGz7A0aOSQnN3YOsQ20N2FsIkHsxJp4pDhTmJXNxGUfUGVJKlrG~0RBxLZJrlSmz01lhPQ1SoeK1RJw__",
+                "img2":"https://s3-alpha-sig.figma.com/img/1bc7/ff0e/bcc19386e3b4b2c18dc673beb65c74fe?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bX~NM5ReZBXRoT2Imf2q1rP1wwMhepfgKH8s6R716F4W8Mc7BgV-5tN2vzr9x0dTWeWXIbTyHwgizUESrMKTbUSxEanqL-C92gixxqq0r47F7Q2bf8DR3W-3q7iyTvsCGRi15x14-0OV0NzTNpH70DBfiH4KdTA0cpAviG9-2F35ppAx686qCpFKAcuZcKJsu7HNsd9C6worEafUfwiTuJO5n6sZrngk6RyCEHeulGcacmeZQ-ba75LVYqTDhH0bBR1Cm9u9S1P2ZAYdKICLtC4KY~zcQ5kdF5fRC1QyfNI9zT~VwMS-a53zjBTq3wOAeBagSPKyFT1hpqkwETASGQ__",
+                "img3":"https://s3-alpha-sig.figma.com/img/ec48/7fca/2d3ec5e98c7e3c6bed27cbc62e73ebad?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J~oKptryT7Eo2QOGRjbec0J2f04U1avr7N9o-q~f-L2uMalOnVuqRlVg6mbnmlR84Hxz0OrepJV4ejoAuZiXIiLvJOHxJVBMieq~iXO20MnfEt0f3fPyXr69ompTBS7b2CLHDVceD8Diiiyo8ySLMTLW-TC0dEj3KvF~QQNizRtsHU4WNF6ByzkmLHlP7ikihG0Re2dPwgIlbsvgq08tHFuzO6dO2XpcNjPx6y08sqatRm8XB6tWyO5bvPSftaxF-p1q2-t-5GSGjwtAWMQphI6tk5npKZQSMkznk5KUXJGMVPRxIdYPAzK~lfvPTCZFSZip6IoTY4X64CZr8eUWJg__",
+                "img4":""
+            }, 
+            {
+                "tech":"Design Tools",
+                "img1":"https://s3-alpha-sig.figma.com/img/8c1a/831a/a305533e6c29c6227b068226004a5e5e?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l68h8i0pIgz0PNlDuGmGoyxNG2yhZGrkO~zg7ErX7yyHKmrImdGkRh14pv6yqcqNIRhsnhd5KLaPjxcxlAoMOv4vz5HUmjpAg4l-ADBmGvQULvVbs7n6yze6jHqv0uQDirtKwbF8LpqKZzk~mqAdAIxb9tF~4iWYwyGdRcdOzU64nQDu1lgxZvREZeNCuBlCLc3L1M3LltENBGXPKx86QhiY3pmEx7M3Mff-GX1QQjqYnFNY2H73n09a~RJTGeupg73Fcyn8hWYwTwz6gu8IibIKhyfxf-IhnOUKGf2qfaAOj-qcS~QaoVCZzdZQ16DMjm~Xb9buPEc6~yTfRVzdyw__",
+                "img2":"https://s3-alpha-sig.figma.com/img/0b45/4a40/633c7eaedfcb48e4035548ad0db45caf?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XKWVHb23bITFU2nMP7taz~0Zezi2XD3NStWoWKTex07lQ~1tvaYGg4uCetdMpZQFFvrcOz12gt~ZwEeET-vzw7TFys-oSME7jKbtt9qNCM2dytLUcEX-IiDY8iz50mbMpveC43dedlYtDZdkgdHiFSpIjXsBoaDHyS2fH7j6Kzxi9F9RK9iEkhBj9HgukkDT~d7IadZOCJtSGFBzCSwALSoqXgPHsiXfj821OFbuHofbB~2QHcRSfBrgwbhAES-CQ6-lrWIEeWTTbuiZHjZiRGXxxgYO74LCUNHIfRXuVa5jXLhsJKbHD0cUSPHoqlD2nZa0oVmgVE5EUJJjM76VoA__",
+                "img3":"https://s3-alpha-sig.figma.com/img/b7f7/1aa0/a9b3f0dc46da6b36c6e690b931a461bd?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pBL7d3lS2i9L3Gx9S~52sUIlVuLqArnXxDL7mLiqPGE~4-hhetNtif2yGRmtiMDeILxDkoL2IoWzp2oxx00nB~ho6-FWZPhaYnJnXXm7-HB54FQDhpW6s6ZR1JitI5eFBSTntwi7va~5G-~PgvhPUG5B6HprXmiAlroEh1ACpjEyYb-itnBgB7gOJUoTdR1SO5KwhM7FpkTN-F42dEpVu8krSGa2SsDeMsiCRPhRP2YL0biF4gt9a6waomXJpbUmEwCUoLpJ-C5wmmEHWt9GFIIpqpD09LelPLWDg0y1KpyEBCMJR8f9ZrSPisTR9xc0M-Ae8hTt2zKvzvzqitjd8w__",
+                "img4":"https://s3-alpha-sig.figma.com/img/0971/c684/7be101ec9b3405ffcf2be2d343602ff6?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T66VUVrUIYX33~C6nJlZIZ8R~-3QatMy3WzAeslGcT8GrztwNCVTi5N9uq64KOwrVrHVjv4m-xoTeWJL5gmrTdSn53nOnk3mUm62JScpvxDga97TSLGh7-wouGvvn6uQnKjkMF4s3NtKz-DB5o4Hs~Y8eITLcB5jNWXlgIUepBhkucABV5x8ONIg1QIOm7Y-CeQUzdghgr9bmOJHHtZXJwx0~qjHMu9e0nGJDHt14yiDTctPV~Ii8XWXAboUFFsOSnwMQBveO4pwDZnYxC6x9i3NFoOE0l-ssC1CiCdbPllfLlkPVKIys5WCd5HxzLD0iAO15UClDX1u5cQWWjWrrA__"
+            }
+        ]},
+      {
+        "name":"UI/UX Services",
+        "desc": [
+            {
+                "tech":"Language",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            },
+            {
+                "tech":"Databases",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            },
+            {
+                "tech":"Frameworks",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            }, {
+                "tech":"SDK",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            }
+        ]},
+      {
+        "name": "IT Consulting",
+        "desc": [
+            {
+                "tech":"Language",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            },
+            {
+                "tech":"Databases",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            },
+            {
+                "tech":"Frameworks",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            }, {
+                "tech":"SDK",
+                "img1":"",
+                "img2":"",
+                "img3":"",
+                "img4":""
+            }
+        ]}
+    ]
+  }
