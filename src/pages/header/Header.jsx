@@ -29,7 +29,6 @@ import {
 } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -59,19 +58,19 @@ const Header = () => {
       style={{ transform: visible ? "none" : "translateY(-100%)" }}
     >
       <nav
-        className="head-nav mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
+        className="head-nav w-[100%] mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
         aria-label="Global"
       >
-        <div className="head-left flex lg:flex-1">
+        <div className="head-left w-[40%] flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <img
               className="h-8 w-auto"
-              src="https://s3-alpha-sig.figma.com/img/907d/b132/18416053887fa3a59824c11193bc926d?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VhJnD49GdotYTr-7rWXOTtmLRp2sAjTFOjy6U8iQC7QidjXPpST~yy5jcpdNgP-yldD-8LJJavy7PP-~EWAkPx-4pBVlwzuTIrs3N1ZyV8Glg~mP3ZYgopuxZmKZZc4sa0jYQdnpuwYTMiT0bysXK8Vt04G7Nv1UWi1Bcebmtk8woV6U1pCEaKg0p96HVx~iyLT6hVmaK9gfJ5UMWdXIC3v-3wyq5x3b7~-0NQT4lEzSXUOcGvTtIrzQNP6NZtn4abNdrqnXXFp-tu8rTXJGakBFhdV1XqWZZ2q5pPfv2rinFuxzqqhraDfFiHvg0vC~oSjmWgwOuI-JwM3M0PEUOA__"
+              src="https://s3-alpha-sig.figma.com/img/907d/b132/18416053887fa3a59824c11193bc926d?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GJBmarmR1wSM9c~-jj197WdMw~nVRkgo8xRYdQavuLyQO68V8GgzUDf51Sc5oS-rqGc1OFNHzY5cMsZGVpMb0A4QnEDubbk86XT0-xEogaAbNyJR0Qopbr77Maqt4Hi7aNhMo7X0G22Y1TRQ8MCRC7LaonNZCC2LRf53c8zkSDyM5u6VE~4G4m0tf4npHHlLW-f2KrNZqynksXKAZm-4zlOtiIp9bIMkkbL6PbsPCq3sN2HhP3uuJCcTxkp8GX4Kx21nHGG6dEUDaHWGS~MQsBXslq8fAepzrTYdRMURHpshnZ~l4lZ9vc1EbMz7NORvRYG-jtsDip8JQMs8t9cWJQ__"
               alt="Logo"
             />
           </a>
         </div>
-        <div className="head-right">
+        <div className="head-right gap-x-[2rem] flex justify-space">
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -112,10 +111,11 @@ const Header = () => {
             </Link>
             <Popover className="relative">
               <PopoverButton
-               className={classNames(
-                location.pathname === "/dedicatedDev" ? "active" : "",
-                "text-sm font-semibold leading-6 text-white flex items-center gap-x-1 text-sm font-semibold leading-6 text-white"
-              )}>
+                className={classNames(
+                  location.pathname === "/dedicatedDev" ? "active" : "",
+                  "text-sm font-semibold leading-6 text-white flex items-center gap-x-1 text-sm font-semibold leading-6 text-white"
+                )}
+              >
                 Pages
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
@@ -149,7 +149,7 @@ const Header = () => {
                           "text-sm font-semibold leading-6 text-white"
                         )}
                       >
-                       Industries
+                        Industries
                       </Link>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ const Header = () => {
                           "text-sm font-semibold leading-6 text-white"
                         )}
                       >
-                       Blog
+                        Blog
                       </Link>
                     </div>
                   </div>
@@ -192,8 +192,9 @@ const Header = () => {
               Contact Us
             </Link>
           </PopoverGroup>
-          <div className="hidden lg:flex ylg:flex-1 lg:justify-end">
-            <button className="log-butt">Get Quote</button>
+          <div className="hidden lg:flex ylg:flex-1 lg:justify-end ">
+
+              <button className=" bg-[#013bbe] text-white px-[12px] py-[13px] rounded-[5px] text-[1rem] font-semibold hover:bg-[#04287b]">Get Quote</button>
           </div>
         </div>
       </nav>
@@ -269,62 +270,66 @@ const Header = () => {
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                     
-                      <div className="p-4">
-                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6">
-                    <div className="flex-auto">
-                      <Link
-                        to="/dedicatedDev"
-                        className={classNames(
-                          location.pathname === "/dedicatedDev" ? "active" : "",
-                          "text-sm font-semibold leading-6 text-white"
-                        )}
-                      >
-                        Dedicated Developer
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 ">
-                    <div className="flex-auto">
-                      <Link
-                        to="/industries"
-                        className={classNames(
-                          location.pathname === "/industries" ? "active" : "",
-                          "text-sm font-semibold leading-6 text-white"
-                        )}
-                      >
-                       Industries
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 ">
-                    <div className="flex-auto">
-                      <Link
-                        to="/portfolio"
-                        className={classNames(
-                          location.pathname === "/portfolio" ? "active" : "",
-                          "text-sm font-semibold leading-6 text-white"
-                        )}
-                      >
-                        Portfolio
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 ">
-                    <div className="flex-auto">
-                      <Link
-                        to="/blog"
-                        className={classNames(
-                          location.pathname === "/blog" ? "active" : "",
-                          "text-sm font-semibold leading-6 text-white"
-                        )}
-                      >
-                       Blog
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-               
+                        <div className="p-4">
+                          <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6">
+                            <div className="flex-auto">
+                              <Link
+                                to="/dedicatedDev"
+                                className={classNames(
+                                  location.pathname === "/dedicatedDev"
+                                    ? "active"
+                                    : "",
+                                  "text-sm font-semibold leading-6 text-white"
+                                )}
+                              >
+                                Dedicated Developer
+                              </Link>
+                            </div>
+                          </div>
+                          <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 ">
+                            <div className="flex-auto">
+                              <Link
+                                to="/industries"
+                                className={classNames(
+                                  location.pathname === "/industries"
+                                    ? "active"
+                                    : "",
+                                  "text-sm font-semibold leading-6 text-white"
+                                )}
+                              >
+                                Industries
+                              </Link>
+                            </div>
+                          </div>
+                          <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 ">
+                            <div className="flex-auto">
+                              <Link
+                                to="/portfolio"
+                                className={classNames(
+                                  location.pathname === "/portfolio"
+                                    ? "active"
+                                    : "",
+                                  "text-sm font-semibold leading-6 text-white"
+                                )}
+                              >
+                                Portfolio
+                              </Link>
+                            </div>
+                          </div>
+                          <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 ">
+                            <div className="flex-auto">
+                              <Link
+                                to="/blog"
+                                className={classNames(
+                                  location.pathname === "/blog" ? "active" : "",
+                                  "text-sm font-semibold leading-6 text-white"
+                                )}
+                              >
+                                Blog
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
                       </DisclosurePanel>
                     </>
                   )}

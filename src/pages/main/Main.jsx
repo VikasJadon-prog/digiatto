@@ -24,10 +24,9 @@ const Main = () => {
    <Route path="/industries" element={<Industries/>}/>
    <Route path="/portfolio" element={<Portfolio/>}/>
    <Route path="/blog" element={<Blog/>}/>
-  
    </Routes>
    <Footer/>
-   </>
+   </>  
   )
 }
 

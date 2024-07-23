@@ -1,203 +1,98 @@
-.home-cont{
-    overflow: hidden;
-    display: flex;
-    margin-top: 0px;
-    width: 100%;
-    height: auto;
-    background-image: radial-gradient(rgba(47, 32, 200, 1) , rgb(0, 16, 51) );
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px
-};
-.home-inner{
-    margin-top: 90px;
-    width: 100%;
-}
-.home-des{
-  margin-top: 180px;
-  font-family:"Profanations";
-}
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
-.home-card-inner{
-  background-color: #001035;
-  width: 76px;
-  height: 70px;
-  border-radius: 10px;
-  margin-left: 25px;
-  margin-bottom: -45px;
-  position: relative;
- border-color: #012b89;
- border-width: 1.5px;
-  
-}
-.home-card:hover .home-card-inner{
+.home-card:hover .home-card-inner {
   box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
 }
 
-.home-cards{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 1em;
-  row-gap: 2em;
-  margin-top: 90px;
-  width: 100%;
-  padding: 2% 5%;
-  
-}
-.home-card:hover{
+.home-card:hover {
   transform: translatey(-10px);
   transition: transform 0.5s ease;
- }
-.home-card:hover .card-desc-a{
- color:#FCB61A ;
-
 }
-.home-card:hover .card-desc-a svg{
+.home-card:hover .card-desc-a {
+  color: #fcb61a;
+}
+.home-card:hover .card-desc-a svg {
   transition: transform 0.3s ease;
 }
-.home-card:hover .card-desc-a svg{
-   transform: rotate(45deg);
+.home-card:hover .card-desc-a svg {
+  transform: rotate(45deg);
 }
 
-.card-desc{
-  border-radius: 10px;
-  background-color: #001035;
-  border-color: #012b89;
-  border-width: 1.5px;
-}
-.home-card:hover .card-desc{
+.home-card:hover .card-desc {
   box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
-} 
-.our-proj-inner{
-
+}
+.our-proj-inner {
   padding: 0% 5%;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.our-proj-inner .home-des{
-  width: 60%;
-}
+
 .our-proj-cards {
   width: 100%;
   padding: 0% 5%;
   column-gap: 3em;
 }
 
-.our-proj-card-des{
- 
-  background-color: #013dc4;
-}
-
-.our-proj-card-des-but{
+.our-proj-card-des-but {
   border-radius: 100%;
   background: #000;
   padding: 2px;
 }
 
-
-
-
-.expert-desc{
-  padding: 2% 5%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-
+.expert-desc .home-des {
+  width: 60%;
 }
-.expert-desc .home-des{
-  width:60% ;
-}
-.exper-car-butt button{
-  border-color:#013dc4;
-  border-width: 1px;
-}
-.exper-car-butt{
+
+.exper-car-butt {
   width: 40%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   column-gap: 0.8em;
 }
-.exper-carousel-but{
+.exper-carousel-but {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.expert-crrrr{
-  margin-bottom: -50px;
-  transition: transform ease-in-out 0.5s;
-}
-.expert-carous-inner:hover .expert-crrrr {
-  transform: translateY(-60px);
-}
-.home-tech{
-  width: 100%;
-  padding: 2% 5%;
-}
-.home-tech-carous{
+
+.home-tech-carous {
   margin-top: 100px;
 }
-.home-tech-carous-card{
+.home-tech-carous-card {
   background-color: #001035;
-  padding: 1.5%;
+  padding: 20px;
   width: 100%;
   border-width: 1px;
   border-color: rgba(1, 61, 196, 1);
   border-radius: 5px;
-  padding-bottom: 2%;
+  padding-bottom: 20px;
 }
-.home-tech-carous-card:hover{
+.home-tech-carous-card:hover {
   box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
 }
-.home-tech-card-div{
+.home-tech-card-div {
   width: 50px;
   height: 50px;
   border: 1px solid rgba(1, 61, 196, 1);
   background-color: rgba(0, 16, 53, 1);
   border-radius: 5px;
 }
-.home-tech-carous-card:hover .home-tech-card-div{
+.home-tech-carous-card:hover .home-tech-card-div {
   box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
 }
 
-.new-art{
-  padding: 2% 5%;
-}
-.new-art-card{
-  background-color: #001035;
-}
-.new-art-card:hover{
+.new-art-card:hover {
   box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
 }
-.new-art-card:hover .new-art-card-img{
+.new-art-card:hover .new-art-card-img {
   box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
 }
-.award{
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2% 5%;
 
-}
-.award-img-sec{
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.award .home-des{
-  margin-top: 0px;
-  width: 50%;
-}
-.award img{
-  width: 100%;
-}
-
-.home-testimonial{
+.home-testimonial {
   margin-top: 100px;
   width: 100%;
   display: flex;
@@ -206,66 +101,36 @@
   padding: 2% 5%;
 }
 
-.home-testimonial-inner{
+.home-testimonial-inner {
   width: 100%;
   box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
-  border:1px solid  rgba(1, 61, 196, 1) ;
+  border: 1px solid rgba(1, 61, 196, 1);
   background-color: #011037;
-  border-radius: 5px
-}
-.home-testimonial-inner .home-des{
-  margin-top: 50px;
-}
-.slider-container .slick-prev {
-  left: -63px;
-}
-
-.slider-container .slick-next {
-  right: -63px;
-}
-
-.slider-container .slick-next:before,
-.slider-container .slick-prev:before {
-  font-family: none;
-  font-size: 18px;
-  color: white;
-  opacity: 1;
-}
-
-.slider-container .slick-next {
-  border: 1px solid white;
-  width: 44px;
-  height: 44px;
-  background-color: transparent;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: -1px;
-}
-
-.slider-container .slick-prev {
-  border: 1px solid white;
-  width: 44px;
-  height: 44px;
-  background-color: transparent;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: -1px;
-}
-
-.slick-center .slide-content {
-  transform: scale(1.1);
-  background-color: #FFCC00;
-  transition: transform 0.5s ease, background-color 0.5s ease;
-}
-
-.slide-content {
-  background-color: #1a1a1a;
-  padding: 20px;
   border-radius: 5px;
-  color: #fff;
-  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.our-proj-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.our-proj-card-des {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.our-proj-card-des {
+  transform: rotateY(180deg);
 }

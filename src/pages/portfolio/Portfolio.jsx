@@ -18,11 +18,11 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <div
-        className="indus-st w-full h-full pb-9 "
-        style={{
-          backgroundImage:
-            "radial-gradient(circle farthest-side, #0f1563, #001033)",
-        }}
+        className="indus-st w-full h-full pb-9 bg-gradient-to-r from-blue-900 to-blue-700"
+        // style={{
+        //   backgroundImage:
+        //     "radial-gradient(circle farthest-side, #0f1563, #001033)",
+        // }}
       >
         <div
           className="home-des mt-0 py-6 pb-14 mx-auto max-w-5xl lg:text-center text-center"
@@ -137,7 +137,7 @@ const Portfolio = () => {
                 )}
               </div>
             ))}
-            
+
             <div className="w-full flex  justify-center items-center">
               <button
                 type="button"

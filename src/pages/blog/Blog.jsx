@@ -108,12 +108,12 @@ const Blog = () => {
             </button>
           </div>
         </div>
-        <div className="w-full " >
-        <h3 className="text-center text-white font-bold text-2xl">Popular Posts</h3>
-
+        <div className="w-full ">
+          <h3 className="text-center text-white font-bold text-2xl">
+            Popular Posts
+          </h3>
+        </div>
       </div>
-      </div>
-      
     </div>
   );
 };

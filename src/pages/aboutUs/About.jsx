@@ -6,21 +6,22 @@ import ContactForm from "../../components/contactForm/ContactForm.jsx";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about bg-[#001033]">
       <div className="about-inner">
         <div className="about-main-des">
           <div
-            className="home-des mx-auto max-w-2xl lg:text-center"
+            className="home-des mx-auto  lg:text-center"
             style={{ color: "rgba(252, 182, 26, 1)" }}
           >
             <h2 className="text-lg font-semibold leading-7 ">
               DIGIATTO IT SERVICES
             </h2>
-            <p className="mt-8 w-full text-6xl font-semibold  tracking-tighter text-white lg:text-5x1 ">
+            <p className="mt-8 w-full text-6xl max-w-[95%] font-semibold  tracking-tighter text-white lg:text-5x1 ">
             Your Trusted Technology <span className='text-[#013cc1]'>Partner</span>
           </p>
             
-            <p className="mt-7 text-sm leading-4 text-white">
+          <div className="flex justify-center items-center">
+          <p className="mt-7 text-sm leading-4 text-white max-w-[50%]">
               In today's rapidly evolving digital landscape, having a reliable
               and innovative IT partner is crucial for success. At Digiatto IT
               Services, we understand the challenges businesses face and are
@@ -28,10 +29,11 @@ const About = () => {
               to achieve your goals.
             </p>
           </div>
+          </div>
         </div>
         <div className="about-poster">
           <img
-            src="https://s3-alpha-sig.figma.com/img/6aa5/4f0f/bd039f96e62f2b9c53b6d4a49bc12667?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pqbmYZD7LwQtalbLklb4Zbu9Xk3g1ILkD8IlSN~QEZO1JFyC6ldkjRY7nJIR4cBHKo5ClpW8Vjqx3~a2ayirhmoTZQ3ByFPLd9LKv1JukDVvLMQOB4RZIhHFlUurNBl8lrECAZGN0JKglgWnv5beULPm2woErgYnhtRhF8WSNDn8e9CDy7atJwnycCgUHTns0YXyAd16dA~-zsZ7JdWER1DhuefekQDLWBB2Un8W4Er9qXXe2D3DLGgh8sdTWIFdZB2Q1cAbPvSU0lFL0ByfbF9Qvji08cB9EQUubvZpX7pUVWnpmq~OZuUgJyrlid4S32skUYe2CdsnRnMiyfDQaA__"
+            src="https://s3-alpha-sig.figma.com/img/6aa5/4f0f/bd039f96e62f2b9c53b6d4a49bc12667?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YLMFV19L5Z3IdILAIttnIRLHhM6QATuX~OLV39ZbYdEapzIRT6cWY820l-M~hUd8G4w6-mGWVPphj8CBGW6sCmzKGwqoPi14W1O9JzHw3dzIvrVbaKl3-JA8ZD6YrUf407Ialegxn0CVwYqzpOTJ78W2H9TdX2HgV-zcGgqTZkgC8QGs4h9lWbf571vQWMtmXDy8JaK-g-oOosoVu2VwgF8nMK8DZ~FH4mgDSMQmYlu4dd7K36k~kgDTpyjiZID-M9Mrj47aQLWD9Xq~b4CKuICayztP~3bRa3PnmALgxxmS4F9eY-3UWDRgB7SbCsLvSSRSP2-7xEdWP~DledEh1Q__"
             alt="about-imge"
           />
         </div>
@@ -165,7 +167,7 @@ const About = () => {
           </div>
           <div className="mt-14 w-full flex justify-center items-center">
             <img
-              src="https://s3-alpha-sig.figma.com/img/b1de/a09e/53633b273328e2cd659b1e44cd33c9cd?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YenH8sjsAkS4Tl1U7IU1PcsHdVJRlc9qicmiuMQMcsVXpd50gkhWTI6blCSS6m7yT3wSeI2b2xtTyDEZ3hPZ2cyPD8uPkrbxIf5PVtG80210aMI~7cxZLU6YOJ34TNNwOovLQGGnujl-NHt0YPlnCATyLibqreL1NEEHhbid7i2psFoq8aj8LmPx8xHUcutqa0KmFPI5acCaniABnpiUJzAyywySEeLgmgXf-uzWeGPLUYyJyjU3y1RBiL40ks7vycNh29x-dBztrnp8AAj4BzCSAO4wAY1Pp0f0iwIhlxfJ94nPGI4dgb1sVRx6rWd4ezSqI-6wte1~VIZytZkRRg__"
+              src="https://s3-alpha-sig.figma.com/img/b1de/a09e/53633b273328e2cd659b1e44cd33c9cd?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RFII7Yzh8I3dYL-9H9fKfwZyP~WtGhaEqXg53bgO~V2jEhK~UybdP6en3qRdUJUeuxPIaXH7IjfEnKQ~ElXRj5MO3IIRnHFvUCie0DxSaHR6izr~NkgSu6oJaz2Vv9kTocuzmUt5oCfyWNPh5eI~WRk-reFwpV~rPYiRbFBTuPUmxOzgvY~ysOAn986wTHiFIqOBy1ltkux-waNxeeDK99UScIkvUuWo8kQzZyOj~j7U9U8xYmrTns88hiGyAYBbgeiiGzPLv1Fecd7353xLZ2PpzCIZ~f1ZrNsmL7VqVCrPhiBpT39IYAAg1XMPpOaOeY2YOBLUIFHcOCOhsVjyUw__"
               alt=""
             />
           </div>
@@ -174,10 +176,10 @@ const About = () => {
           <div className="about-innovator-desc w-full flex justify-between items-center">
             <div className="about-innovator-desc-cont w-half">
               <div
-                className="home-des mt-0 lg:text-start"
+                className="home-des mt-[160px] lg:text-start"
                 style={{ color: "rgba(252, 182, 26, 1)", fontSize: "20px" }}
               >
-                <h2 className="text-lg font-semibold leading-7 ">INNOVATORS</h2>
+                <h2 className="text-lg font-semibold leading-7  text-[#FCB61A] text-[20p]">INNOVATORS</h2>
                 <p className="mt-7 text-5xl font-bold tracking-tight text-white lg:text-5x1">
                   Company Built By A Global Team Of Innovators
                 </p>
@@ -323,7 +325,7 @@ const About = () => {
                   <div className="about-innov-left-card-up">
                     <div>
                       <img
-                        src="https://s3-alpha-sig.figma.com/img/08a7/f53d/9e15f020a8cad1c5e4241f64c6e688f3?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KnYEPMB70Mn8MsfVuwFafuCDgTWb9BPH3cK~d8Ca1OgzEyqBHleRH15zAG3I5k~z9oovS2RTWfw4NHBtKEayXf4FznxdXfMAHuF7VcTrICxhlPgMpcpEDwACMOCbaEYGyWYgBP-gaRd1s2xTxDb9qpdv95fwQNCX1rgRQD~9KrDNq~VLNV2JytXpGFs1vrU~FQMLBI~sx4l7kOghMAlPYRiljOxEnl3Eal5lLPlqXGzWweaO8UQRAHLKod-cenXIa6MupAhQKmDw3dxc0ixxbWixc9GKmy7AwnATVRrTCTxuutqp6ufql5FXIG4LEEwNdwrlfNpiQHRg6wbbZ27Ngg__"
+                        src="https://s3-alpha-sig.figma.com/img/08a7/f53d/9e15f020a8cad1c5e4241f64c6e688f3?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VpddVggLjhbwYGywN0xQPvNPKPyHFApQOog8U1pyC-J25AhFy7kgwDK1i5SV6GvWY756wgtQEnPA0CU-RYybbnifp9nb3WWVagacy5Y9iorOVKCBdAYgvE86Ti~rhHo20GgD4ItIvbo284fy4U-~qL1etN5gMVuagv7PKNOYT1PRKmd-9msqeE7tRhNS2cFS-9cWSfc4v86wNoo2j1CLixCssq21lmTo-iYnoBVvebghQLhSkiaAK-zwSmQF2gOWA8Cn-9rlN31T7NGRub-rrLEBHP7ClZsOBIBg0SIPon6PNmSgo9BUSIBkemSkY8NesXgUH8qhga-fg2RE7CWtrg__"
                         alt="adksjlf"
                       />
                     </div>

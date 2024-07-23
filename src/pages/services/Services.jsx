@@ -2,19 +2,20 @@ import React from "react";
 import "../services/Services.css";
 import { MdArrowOutward } from "react-icons/md";
 import HorizScroll from "../../components/horizontalScroll/HorizScroll";
-import { ServiceCard } from "../../components/serviceCard/ServiceCard";
 import serviceSoftEngCard from "../../JSON/serviceSoftEngCard.json";
 import serviceDigital from "../../JSON/serviceDigital.json";
 import ContactForm from "../../components/contactForm/ContactForm";
+import ServiceCard from "../../components/serviceCard/ServiceCard.jsx";
+import "../../components/serviceCard/ServiceCard.css";
+
 const Services = () => {
+  const items = serviceSoftEngCard.domain;
+
   return (
-    <div className="service w-full ">
+    <div className="service w-full bg-[#001033] ">
       <div className="service-inner inline w-full  overflow-visible">
-        <div
-          className="home-des py-6 pb-14 mx-auto max-w-3xl lg:text-center"
-          style={{ color: "rgba(252, 182, 26, 1)", fontSize: "20px" }}
-        >
-          <h2 className="text-lg mt-3 font-semibold leading-10 ">
+        <div className="home-des mt-[180px] py-6 pb-14 mx-auto max-w-3xl lg:text-center  text-[20px]">
+          <h2 className="text-lg mt-3 font-semibold leading-10  text-[#FCB61A] ">
             OUR SERVICES
           </h2>
           <p className="mt-8 text-6xl font-semibold  tracking-tighter text-white lg:text-5x1 ">
@@ -41,33 +42,39 @@ const Services = () => {
         <div className="service-hori">
           <HorizScroll customItems={true} />
         </div>
-          <div className="w-full grid grid-col-2">
-            <div className="service-soft-eng px-9  justify-between ">
-              <div className="flex justify-between">
-                <div
-                  className="home-des mt-0 w-[30%] lg:text-start"
-                  style={{ color: "rgba(252, 182, 26, 1)", fontSize: "20px" }}
-                >
-                  <h2 className="text-md font-semibold leading- ">
-                    SOFTWARE ENGINEERING
-                  </h2>
-                  <p className="mt-7 text-3xl font-semibold tracking-tight text-white lg:text-5x1">
-                    Level Up Your Tech Stack
-                  </p>
-                  <p className="mt-7 text-sm leading-3 text-white">
-                    Expert Software Engineering Services
-                  </p>
-                </div>
-                <div className="w-[60%] flex justify-center items-center">
-                  <div className="service-soft-eng-lay-pic1"></div>
-
-                  <div className="service-soft-eng-lay-pic2"></div>
-                </div>
-              </div>
-
-              <ServiceCard customData={serviceSoftEngCard.domain} />
+        <div className="w-full grid grid-cols-3 gap-[4em]  p-[3%] ">
+          <div className="service-soft-eng  justify-between col-span-1 row-span-1">
+            <div
+              className="home-des mt-0"
+              style={{ color: "rgba(252, 182, 26, 1)", fontSize: "20px" }}
+            >
+              <h2 className="text-md font-semibold leading-none">
+                SOFTWARE ENGINEERING
+              </h2>
+              <p className="mt-7 text-3xl font-semibold tracking-tight text-white lg:text-5x1">
+                Level Up Your Tech Stack
+              </p>
+              <p className="mt-7 text-sm leading-3 text-white">
+                Expert Software Engineering Services
+              </p>
             </div>
           </div>
+          <div className="service-soft-eng-lay-picuter flex justify-center items-center col-span-2 row-span-3">
+            <div className="service-soft-eng-lay-pic1 w-full h-36 bg-gray-400"></div>
+            <div className="service-soft-eng-lay-pic2 w-full h-36 bg-gray-400"></div>
+          </div>
+
+          <div className="service-soft-eng-cards col-span-1 row-start-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-y-[5em] mb-[-2em] ">
+            {items.slice(0, 2).map((item, index) => (
+              <ServiceCard key={index} customData={{ item, index }} />
+            ))}
+          </div>
+          <div className="service-soft-eng-cards col-span-3 row-start-4 grid grid-cols-3 gap-[5em] mt-[-01em]">
+            {items.slice(2).map((item, index) => (
+              <ServiceCard key={index} customData={{ item, index }} />
+            ))}
+          </div>
+        </div>
         <div className="service-digital">
           <div
             className="home-des py-6 pb-14 mx-auto max-w-3xl lg:text-center"
@@ -85,15 +92,19 @@ const Services = () => {
           </div>
           <div className="service-digital-cards">
             <div className="flex justify-center items-center w-full">
-              <ServiceCard customData={serviceDigital.domain[0]} />
+              {serviceDigital.domain[0].map((item, index) => (
+                <ServiceCard key={index} customData={{ item, index }} />
+              ))}
             </div>
             <div className="flex justify-center items-center w-full">
-              <ServiceCard customData={serviceDigital.domain[1]} />
+              {serviceDigital.domain[1].map((item, index) => (
+                <ServiceCard key={index} customData={{ item, index }} />
+              ))}
             </div>
           </div>
           <div>
-          <ContactForm />
-        </div>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>

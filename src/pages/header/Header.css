@@ -1,6 +1,6 @@
 
 .head-cont{
-    background-color: #1E1C30;
+    background-color:#1E1C30;;
     border-end-start-radius: 15px;
     border-bottom-right-radius:10px ;
     top: 0;
@@ -14,39 +14,19 @@
     margin-bottom: 1px;
     transform: translateY(0);
     transition: transform 0.4s ease-in-out;
+    border: 1px solid #3A384F
 }
 
 .header-hide {
     transform: translateY(-100%);
     transition: transform 0.4s ease-in-out;
 }
-.head-nav{
-    width: 100%;
-}
-.head-left{
-    width: 40%;
-}
-.head-right{
-    column-gap: 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-.log-butt{
-    background-color: #013bbe;
-    color: white;
-    padding: 12px 13px;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 500;
-}
-.log-butt:hover{
-    background-color: #04287b;  
-}
-/* Add this CSS to your existing stylesheet */
-.active {
 
-   
-    color: rgba(252, 182, 26, 1);
 
+
+
+
+.active {  
+    color: rgba(252, 182, 26, 1); 
   }
   

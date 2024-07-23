@@ -7,14 +7,9 @@ import ContactForm from "../../components/contactForm/ContactForm";
 
 const DedicatedDev = () => {
   return (
-    <div className="dedicated-dev">
+    <div className="dedicated-dev bg-[#001033] ">
       <div
-        className="dedi-dev-st w-full h-full pb-9 "
-        style={{
-          backgroundImage:
-            "radial-gradient(circle farthest-side, #0f1563, #001033)",
-        }}
-      >
+        className="dedi-dev-st w-full h-full pb-9" >
         <div
           className="home-des mt-0 py-6 pb-14 mx-auto max-w-5xl lg:text-center text-center"
           style={{ color: "rgba(252, 182, 26, 1)", fontSize: "20px" }}
@@ -111,10 +106,7 @@ const DedicatedDev = () => {
         </div>
         
       </div>
-      <div className="hire-dev  px-[3%]  py-[2%]" style={{
-          backgroundImage:
-            "radial-gradient(circle farthest-side, #0f1563, #001033)",
-        }}>
+      <div className="hire-dev  px-[3%]  py-[2%]">
           <div className="hire-dev-conte flex w-full justify-space items-center gap-x-[10em]">
             <div
               className="home-des  lg:text-start max-w-md"
