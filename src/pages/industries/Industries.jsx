@@ -1,9 +1,13 @@
 import React from "react";
 import "../industries/Industries.css";
 import { MdArrowOutward } from "react-icons/md";
-import indusExep from "../../JSON/indusExep.json"
 import ContactForm from "../../components/contactForm/ContactForm";
+import { useDispatch, useSelector } from "react-redux";
 const Industries = () => {
+  const {expertise , loading, error } = useSelector((state) => state.api);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
   return (
     <div className="industries w-full">
       <div
@@ -74,14 +78,14 @@ const Industries = () => {
         <div className="w-full flex justify-center item-center p-6 pb-[60px]">
 
         <div className="indus-expert-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-[5rem] justify-center items-center w-full ">
-          {indusExep.data.map((item,index)=>(
+          {expertise.map((item,index)=>(
            <div className="w-full flex justify-center items-center " key={index+1}>
              <div className="indus-expert-card text-center w-[257px] relative text-center" >
             <div
               className="indus-exp-card-img relative"
               style={{
                 backgroundImage:
-                  `url("${item.img}")`,
+                  `url("${item.image}")`,
               }}
             >
               <div className="absolute inset-0 flex rounded-lg  items-end justify-center bg-gradient-to-b from-transparent to-blue-900 opacity-0 hover:opacity-100 transition-opacity duration-300">
@@ -96,10 +100,10 @@ const Industries = () => {
             </div>
             <div className="">
               <h5 className="mt-5 mb-2 text-md font-medium tracking-wide text-white dark:text-white">
-                {item.name}
+                {item.topic}
               </h5>
               <p className="mb-4 text-xs tracking-wider font-normal h-[65px] max-w-xs text-white dark:text-gray-400">
-              {item.desc}
+              {item.description}
               </p>
             </div>
           </div>

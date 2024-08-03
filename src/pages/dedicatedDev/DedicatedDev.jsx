@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../dedicatedDev/DedicatedDev.css";
 import { MdArrowOutward } from "react-icons/md";
 import dediDevByo from "../../JSON/dediDevByo.json";
 import { HireDevCard } from "../../components/hireDevCard/HireDevCard";
 import ContactForm from "../../components/contactForm/ContactForm";
+import { useDispatch, useSelector } from "react-redux";
 
 const DedicatedDev = () => {
+  const { hireme, loading, error } = useSelector((state) => state.api);
+  useEffect(()=>{
+    console.log(hireme)
+  })
   return (
     <div className="dedicated-dev bg-[#001033] ">
-      <div
-        className="dedi-dev-st w-full h-full pb-9" >
+      <div className="dedi-dev-st w-full h-full pb-9">
         <div
           className="home-des mt-0 py-6 pb-14 mx-auto max-w-5xl lg:text-center text-center"
           style={{ color: "rgba(252, 182, 26, 1)", fontSize: "20px" }}
@@ -50,7 +54,7 @@ const DedicatedDev = () => {
           backgroundImage:
             "radial-gradient(circle farthest-side, #0f1563, #001033)",
         }}
-       >
+      >
         <div
           className="home-des mt-0 py-6 pb-14 mx-auto max-w-5xl lg:text-center text-center "
           style={{ color: "rgba(252, 182, 26, 1)", fontSize: "20px" }}
@@ -78,7 +82,7 @@ const DedicatedDev = () => {
           <div className="w-[60%]">
             <div className="outer-div">
               {dediDevByo.domain.map((item, index) => (
-                <div key={item.id} className="main-div">
+                <div key={index+1} className="main-div">
                   <div className="child-div left">
                     {(index === 0 || index === 2) && (
                       <>
@@ -104,50 +108,47 @@ const DedicatedDev = () => {
             </div>
           </div>
         </div>
-        
       </div>
       <div className="hire-dev  px-[3%]  py-[2%]">
-          <div className="hire-dev-conte flex w-full justify-space items-center gap-x-[10em]">
-            <div
-              className="home-des  lg:text-start max-w-md"
-              style={{ color: "rgba(252, 182, 26, 1)", fontSize: "20px" }}
-            >
-              <h2 className="text-lg font-semibold leading-7 ">
-                HIRE DEVELOPER
-              </h2>
-              <p className="mt-6 text-4xl font-semibold tracking-tight text-white lg:text-5x1">
-                Focus on what you do best, let us handle the code
-              </p>
-            </div>
-            <div>
-              <p className="mt-[100px] ml-[90px]  max-w-lg text-sm leading-6 font-medium text-white">
-                Making a difference by raising the benchmarks. Some of our
-                noteworthy and recent recognitions.
-              </p>
-            </div>
+        <div className="hire-dev-conte flex w-full justify-space items-center gap-x-[10em]">
+          <div
+            className="home-des  lg:text-start max-w-md"
+            style={{ color: "rgba(252, 182, 26, 1)", fontSize: "20px" }}
+          >
+            <h2 className="text-lg font-semibold leading-7 ">HIRE DEVELOPER</h2>
+            <p className="mt-6 text-4xl font-semibold tracking-tight text-white lg:text-5x1">
+              Focus on what you do best, let us handle the code
+            </p>
           </div>
-          <div className="mt-[80px] hire-dev-cards grid grid-cols-3 lg:grid-cols-3 md:grid-2 sm:grid-cols-1 gap-[5em]">
-            {dediDevByo.hire.map((item, index) => {
-              return (
-                <React.Fragment key={index}>
-                  {index === 2 && (
-                    <div className="special-image special-image-1 w-fit"></div>
-                  )}
-                  {index === 5 && (
-                    <div className="special-image special-image-2 w-fit">
-                      <div className="special-image special-image-21 w-fit "></div>
-                      <div className="special-image special-image-22 w-fit"></div>
-                    </div>
-                  )}
-                  <HireDevCard data={item} />
-                </React.Fragment>
-              );
-            })}
+          <div>
+            <p className="mt-[100px] ml-[90px]  max-w-lg text-sm leading-6 font-medium text-white">
+              Making a difference by raising the benchmarks. Some of our
+              noteworthy and recent recognitions.
+            </p>
           </div>
         </div>
-        <div >
-          <ContactForm/>
+        <div className="mt-[80px] hire-dev-cards grid grid-cols-3 lg:grid-cols-3 md:grid-2 sm:grid-cols-1 gap-[5em]">
+          {hireme.map((item, index) => {
+            return (
+              <React.Fragment key={index}>
+                {index === 2 && (
+                  <div className="special-image special-image-1 w-fit"></div>
+                )}
+                {index === 5 && (
+                  <div className="special-image special-image-2 w-fit">
+                    <div className="special-image special-image-21 w-fit "></div>
+                    <div className="special-image special-image-22 w-fit"></div>
+                  </div>
+                )}
+                <HireDevCard data={item} />
+              </React.Fragment>
+            );
+          })}
         </div>
+      </div>
+      <div>
+        <ContactForm />
+      </div>
     </div>
   );
 };

@@ -13,21 +13,10 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/react";
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -38,6 +27,7 @@ const Header = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const location = useLocation();
+  const { navbarlogo, loading, error } = useSelector((state) => state.api);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,6 +42,7 @@ const Header = () => {
     };
   }, [prevScrollPos]);
 
+
   return (
     <header
       className={`.head-cont ${visible ? "head-cont" : "header-hide"}`}
@@ -62,13 +53,11 @@ const Header = () => {
         aria-label="Global"
       >
         <div className="head-left w-[40%] flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <img
-              className="h-8 w-auto"
-              src="https://s3-alpha-sig.figma.com/img/907d/b132/18416053887fa3a59824c11193bc926d?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GJBmarmR1wSM9c~-jj197WdMw~nVRkgo8xRYdQavuLyQO68V8GgzUDf51Sc5oS-rqGc1OFNHzY5cMsZGVpMb0A4QnEDubbk86XT0-xEogaAbNyJR0Qopbr77Maqt4Hi7aNhMo7X0G22Y1TRQ8MCRC7LaonNZCC2LRf53c8zkSDyM5u6VE~4G4m0tf4npHHlLW-f2KrNZqynksXKAZm-4zlOtiIp9bIMkkbL6PbsPCq3sN2HhP3uuJCcTxkp8GX4Kx21nHGG6dEUDaHWGS~MQsBXslq8fAepzrTYdRMURHpshnZ~l4lZ9vc1EbMz7NORvRYG-jtsDip8JQMs8t9cWJQ__"
-              alt="Logo"
-            />
-          </a>
+          {navbarlogo.map((item, index) => (
+            <Link to="/" className="-m-1.5 p-1.5" key={index+1}>
+              <img className="h-8 w-auto" src={item.image} alt="Logo"   />
+            </Link>
+          ))}
         </div>
         <div className="head-right gap-x-[2rem] flex justify-space">
           <div className="flex lg:hidden">
@@ -193,8 +182,9 @@ const Header = () => {
             </Link>
           </PopoverGroup>
           <div className="hidden lg:flex ylg:flex-1 lg:justify-end ">
-
-              <button className=" bg-[#013bbe] text-white px-[12px] py-[13px] rounded-[5px] text-[1rem] font-semibold hover:bg-[#04287b]">Get Quote</button>
+            <button className=" bg-[#013bbe] text-white px-[12px] py-[13px] rounded-[5px] text-[1rem] font-semibold hover:bg-[#04287b]">
+              Get Quote
+            </button>
           </div>
         </div>
       </nav>

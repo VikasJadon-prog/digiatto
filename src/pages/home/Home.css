@@ -1,6 +1,9 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+.home-des {
+  background: "radial-gradient(circle at 50% 50%, rgba(14, 20, 96, 1) 4%, rgba(0, 13, 41, 1) 45%)";
+}
 .home-card:hover .home-card-inner {
   box-shadow: 0px 0px 23.9px 0px rgba(1, 61, 196, 0.41);
 }
@@ -12,6 +15,7 @@
 .home-card:hover .card-desc-a {
   color: #fcb61a;
 }
+
 .home-card:hover .card-desc-a svg {
   transition: transform 0.3s ease;
 }

@@ -3,13 +3,20 @@ import "../services/Services.css";
 import { MdArrowOutward } from "react-icons/md";
 import HorizScroll from "../../components/horizontalScroll/HorizScroll";
 import serviceSoftEngCard from "../../JSON/serviceSoftEngCard.json";
-import serviceDigital from "../../JSON/serviceDigital.json";
+
 import ContactForm from "../../components/contactForm/ContactForm";
 import ServiceCard from "../../components/serviceCard/ServiceCard.jsx";
 import "../../components/serviceCard/ServiceCard.css";
+import { useDispatch, useSelector } from "react-redux";
+import "../../components/serviceCard/ServiceCard.css";
 
 const Services = () => {
+  const { serviceslider, digiautomation,whatwedo, loading, error } = useSelector(
+    (state) => state.api
+  );
   const items = serviceSoftEngCard.domain;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <div className="service w-full bg-[#001033] ">
@@ -40,7 +47,7 @@ const Services = () => {
           </button>
         </div>
         <div className="service-hori">
-          <HorizScroll customItems={true} />
+          <HorizScroll customItems={serviceslider} />
         </div>
         <div className="w-full grid grid-cols-3 gap-[4em]  p-[3%] ">
           <div className="service-soft-eng  justify-between col-span-1 row-span-1">
@@ -65,12 +72,12 @@ const Services = () => {
           </div>
 
           <div className="service-soft-eng-cards col-span-1 row-start-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-y-[5em] mb-[-2em] ">
-            {items.slice(0, 2).map((item, index) => (
+            {whatwedo.slice(0, 2).map((item, index) => (
               <ServiceCard key={index} customData={{ item, index }} />
             ))}
           </div>
           <div className="service-soft-eng-cards col-span-3 row-start-4 grid grid-cols-3 gap-[5em] mt-[-01em]">
-            {items.slice(2).map((item, index) => (
+            {whatwedo.slice(2).map((item, index) => (
               <ServiceCard key={index} customData={{ item, index }} />
             ))}
           </div>
@@ -90,16 +97,22 @@ const Services = () => {
               Automate Your Way to Success
             </p>
           </div>
-          <div className="service-digital-cards">
-            <div className="flex justify-center items-center w-full">
-              {serviceDigital.domain[0].map((item, index) => (
-                <ServiceCard key={index} customData={{ item, index }} />
-              ))}
-            </div>
-            <div className="flex justify-center items-center w-full">
-              {serviceDigital.domain[1].map((item, index) => (
-                <ServiceCard key={index} customData={{ item, index }} />
-              ))}
+          <div className="service-digital-cards w-full  flex justify-center items-center">
+            <div className="w-[90%] justify-center">
+              <div className="flex justify-center items-center w-[100%]">
+                <div className="flex justify-space items-center gap-x-[30%] w-[95%]">
+                  {digiautomation.slice(0, 2).map((item, index) => (
+                    <ServiceCard key={index} customData={{ item, index }} />
+                  ))}
+                </div>
+              </div>
+              <div className="flex justify-center items-center w-[100%] mt-[90px]">
+                <div className="flex justify-space items-center gap-x-[20%] w-[80%]">
+                  {digiautomation.slice(2).map((item, index) => (
+                    <ServiceCard key={index} customData={{ item, index }} />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
           <div>

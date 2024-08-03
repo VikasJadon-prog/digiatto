@@ -1,15 +1,19 @@
 import React from "react";
 import "../portfolio/Portfolio.css";
 import { MdArrowOutward } from "react-icons/md";
-import portCard from "../../JSON/portCard.json";
 import { useState } from "react";
 import ContactForm from "../../components/contactForm/ContactForm";
-const Portfolio = () => {
+import { useDispatch, useSelector } from "react-redux";
+const Portfolio = () => { 
+  const {
+  ourProjData,
+  loading,
+  error,
+} = useSelector((state) => state.api);
   const [visibleCards, setVisibleCards] = useState(4);
-  const totalCards = portCard.length;
-
+  const totalCards = ourProjData.length;
   const loadMoreCards = () => {
-    if (visibleCards >= totalCards) {
+    if (visibleCards >= totalCards) { 
       setVisibleCards(visibleCards - 4);
     } else {
       setVisibleCards(visibleCards + 4);
@@ -64,7 +68,7 @@ const Portfolio = () => {
       >
         <div className="port-pages-inn w-full flex justify-content items-center p-6 pt-9">
           <div className="w-full grid grid-inline gap-y-[5em]">
-            {portCard.slice(0, visibleCards).map((items, index) => (
+            {ourProjData.slice(0, visibleCards).map((items, index) => (
               <div
                 className={`port-card w-full grid lg:grid-cols-2 md:grid-cols-1 md:gap-y-8 gap-y-9  justify-center items-center p-6`}
                 key={index + 1}
@@ -73,8 +77,8 @@ const Portfolio = () => {
                   <>
                     <div className="port-card-img lg:w-[85%] sm:w-[100%]  h-[350px] flex items-center justify-center">
                       <img
-                        src={items.img}
-                        alt=""
+                        src={items.image}
+                        alt="xyz"
                         className="w-[100%] h-[100%] rounded-[10px]"
                       />
                     </div>
@@ -83,10 +87,10 @@ const Portfolio = () => {
                         {items.title}
                       </span>
                       <h2 className="text-white font-semibold leading-[45px] mt-5 dark:text-white mb-6 text-[20px] font-semibold sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                        {items.head}
+                        {items.subtitle}
                       </h2>
                       <p className="text-base mt-6 text-white leading-[20px] lg:text-[13px] w-3/4 mb-6 md:text-[10px]">
-                        {items.descp}
+                        {items.description}
                       </p>
                       <button
                         type="button"
@@ -109,10 +113,10 @@ const Portfolio = () => {
                         {items.title}
                       </span>
                       <h2 className="text-white font-semibold leading-[45px] mt-5 dark:text-white mb-6 text-[20px] font-semibold sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                        {items.head}
+                        {items.subtitle}
                       </h2>
                       <p className="text-base mt-6 text-white leading-[20px] lg:text-[13px] w-3/4 mb-6 md:text-[10px]">
-                        {items.descp}
+                        {items.description}
                       </p>
                       <button
                         type="button"
@@ -128,8 +132,8 @@ const Portfolio = () => {
                     </div>
                     <div className="port-card-img order-1 lg:order-none lg:w-[85%] sm:w-[100%] h-[350px] flex items-center justify-center">
                       <img
-                        src={items.img}
-                        alt=""
+                        src={items.image}
+                        alt="skjdkj"
                         className="w-[100%] h-[100%] rounded-[10px]"
                       />
                     </div>

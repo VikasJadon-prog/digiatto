@@ -17,11 +17,11 @@ const ServiceCard = ({ customData }) => {
       <div className="card-desc max-w-sm w-[80%]  bg-transparent border-[0px]">
         <a href="fdgdg">
           <h5 className=" mb-2 text-md font-semibold tracking-tight text-white dark:text-white">
-            {item.name}
+            {item.title}
           </h5>
         </a>
         <p className="mb-4 text-xs text-white dark:text-gray-400">
-          {item.desc}
+          {item.description}
         </p>
         <a
           href="#"

@@ -80,8 +80,7 @@
   .slick-slider .slick-track, .slick-slider .slick-list{
     padding-top: 40px;
     padding-bottom: 40px;
-    /* padding-right: 10px;  */
-       display: flex;
+    display: flex;
     gap: 10px;
   }
  

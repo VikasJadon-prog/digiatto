@@ -2,26 +2,34 @@ import React, { useState, useEffect } from "react";
 import "../home/Home.css";
 import { MdArrowOutward } from "react-icons/md";
 import HorizScroll from "../../components/horizontalScroll/HorizScroll";
-import homeCard from "../../JSON/homeCard.json";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
-import expertCard from "../../JSON/expertsCard.json";
-import homeTechCar from "../../JSON/home-tech-car.json";
 import newArtCard from "../../JSON/newArtCard.json";
 import Carousel from "../../components/carousel/Carousel.jsx";
 import Client from "../../components/client/Client.jsx";
 import homeCarRev from "../../JSON/homeCarRev.json";
-import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCombinedData } from "../../Store/actions/apiActions.js";
+import Bgimg from "../../assets/Images/Bgimg.jpg";
+import Star3 from '../../assets/Images/3start.png'
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 const Home = () => {
+  const dispatch = useDispatch();
+  const {
+    ourProjData,
+    homeSlider,
+    whatwedo,
+    weareexpert,
+    awards,
+    loading,
+    error,
+  } = useSelector((state) => state.api);
   const slides = homeCarRev;
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [ourProjData, setOurProjData] = useState([]);
-  const [backgroundImage, setBackgroundImage] = useState(
-    expertCard.detail[0].img
-  );
+  const defaultImage = weareexpert.length > 0 ? weareexpert[0].image : "";
+  const [backgroundImage, setBackgroundImage] = useState(defaultImage);
   const handleMouseEnter = (index, img) => {
     setHoveredIndex(index);
     setBackgroundImage(img);
@@ -33,8 +41,8 @@ const Home = () => {
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => {
-      const newIndex = (prevIndex + 1) % expertCard.detail.length;
-      setBackgroundImage(expertCard.detail[newIndex].img);
+      const newIndex = (prevIndex + 1) % weareexpert.length;
+      setBackgroundImage(weareexpert[newIndex].image);
       return newIndex;
     });
     setHoveredIndex(null);
@@ -43,76 +51,74 @@ const Home = () => {
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => {
       const newIndex =
-        (prevIndex - 1 + expertCard.detail.length) % expertCard.detail.length;
-      setBackgroundImage(expertCard.detail[newIndex].img);
+        (prevIndex - 1 + weareexpert.length) % weareexpert.length;
+      setBackgroundImage(weareexpert[newIndex].image);
       return newIndex;
     });
     setHoveredIndex(null);
   };
-  // useEffect(() => {
-  //   AOS.init();
-  //   AOS.refresh();
-  // }, []);
-  const fetchData = async () => {
-    try {
-      const response = await axios.get("https://digiatto.onrender.com/project");
-      setOurProjData(response.data);
-      console.log(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  const fetchTech = async () => {
-    try {
-      const response = await axios.get(
-        "https://digiatto.onrender.com/whatwedo"
-      );
-      // setOurProjData(response.data);
-      console.log(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+
   useEffect(() => {
-    fetchData();
-    fetchTech();
-  }, []);
+    dispatch(fetchCombinedData());
+  }, [dispatch]);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
   return (
     <div className="home-cont overflow-hidden flex mt-[0px] w-[100% bg-[#001033] justify-center items-center pb-[50px]">
       <div className="home-inner w-full mt-[70px] w-[100%]">
-        <div className="home-des mx-auto text-center sm:max-w-[80%] md:max-w-[70%] lg:max-w-[55%] mt-[130px]  ">
-          <h2 className=" customFont  text-lg tracking-wider font-normal leading-8 text-[#FCB61A] text-[20px] ">
-            WE'RE THE EXPERTS
-          </h2>
-         <div className="flex text-center justify-center items-center">
-         <p className=" customFont  mt-7 text-6xl font-500 leading-[90px] max-w-[90%] lg:max-w-[100%] md:max-w-[97%]  text-white lg:text-6xl ">
-            We Develop <span className="text-[#013cc1] ">Creative</span> Website
-            For Your Business
-          </p>
-         </div>
-          <div className=" flex justify-center items-center">
-            {" "}
-            <p className="mt-7 text-[10.3px] leading-[15px]  tracking-widest font-semibold max-w-xl leading-4 text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat duis aute irure dolor in.
-            </p>
-          </div>
-          <button
-            type="button"
-            className="mt-10 text-white  hover:bg-blue-800 font-medium rounded-sm text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        <div
+          className=""
+          style={{
+           backgroundImage:{Star3},
+           backgroundSize: "cover",
+           backgroundPosition: "center",
+           backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div
+            className="home-des mx-auto text-center  py-[120px] "
             style={{
-              backgroundImage:
-                "linear-gradient(90deg, #013DC4 0%, #0034A7 100%)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           >
-            Choose plan
-            <MdArrowOutward className="ml-2 text-lg" />
-          </button>
+            <h2 className=" customFont  text-lg tracking-wider font-normal leading-8 text-[#FCB61A] text-[20px] ">
+              WE'RE THE EXPERTS
+            </h2>
+            <div className="flex text-center justify-center items-center">
+              <p className=" customFont  mt-7 text-6xl font-500 leading-[90px]  text-white lg:text-6xl ">
+                We Develop <span className="text-[#013cc1] ">Creative</span>
+                <br />
+                Website For Your Business
+              </p>
+            </div>
+            <div className=" flex justify-center items-center">
+              {" "}
+              <p className="mt-7 text-[10.3px] leading-[15px]  tracking-widest font-semibold max-w-xl leading-4 text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat duis aute irure dolor
+                in.
+              </p>
+            </div>
+            <button
+              type="button"
+              className="mt-10 text-white  hover:bg-blue-800 font-medium rounded-sm text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, #013DC4 0%, #0034A7 100%)",
+              }}
+            >
+              Choose plan
+              <MdArrowOutward className="ml-2 text-lg" />
+            </button>
+          </div>
         </div>
         <div className="mt-[130px]">
-          <HorizScroll />
+          <HorizScroll customItems={homeSlider} />
         </div>
         <div className="home-des mx-auto max-w-2xl lg:text-center mt-[130px] customFont">
           <h2 className="text-lg font-semibold leading-7  text-[#FCB61A]">
@@ -127,7 +133,7 @@ const Home = () => {
         </div>
         <div className="flex justify-center items-center p-5 mt-[60px]">
           <div className="home-cards grid lg:grid-cols-3 md:grid-cols-2 gap-[3em] sm:grid-cols-1">
-            {homeCard.domain.map((item, index) => (
+            {whatwedo.map((item, index) => (
               <div className="home-card  hover:bg-transparent" key={index + 1}>
                 <div className="home-card-inner  w-[76px] h-[70px] rounded-[10px] ml-[25px] mb-[-45px]  relative border-[#012b89] border-[1.5px] bg-[#001035]">
                   {/* <img
@@ -139,11 +145,11 @@ const Home = () => {
                 <div className="card-desc max-w-sm p-6 rounded-[10px] bg-[#001035] border-[#012b89] border-[1.5px]">
                   <a href="#">
                     <h5 className="mt-9 mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-                      {item.name}
+                      {item.title}
                     </h5>
                   </a>
                   <p className="mb-4 font-normal text-white dark:text-gray-400">
-                    {item.desc}
+                    {item.description}
                   </p>
                   <a
                     href="#"
@@ -179,46 +185,47 @@ const Home = () => {
             </div>
           </div>
           <div className="our-proj-cards mt-[70px]  grid lg:grid-cols-3 gap-[3em] sm:grid-cols-1 xs:grid-cols-1 md:grid-cols-2 justify-center mb-8">
-            {ourProjData.map((item, index) => (
-              <div
-                className="our-proj-card lg:w-[370px] lg:h-[300px] rounded-[10px] sm:w-[390px] sm:h-[305px] "
-                key={index + 1}
-              >
-                <div class="flip-card-inner relative w-full h-full text-center ">
-                  <div class="flip-card-front rounded-[10px] bg-transparent">
-                    <img
-                      src={item.image}
-                      alt="Avatar"
-                      className="w-full h-full rounded-[10px]"
-                    />
-                  </div>
+            {Array.isArray(ourProjData) &&
+              ourProjData.map((item, index) => (
+                <div
+                  className="our-proj-card lg:w-[370px] lg:h-[300px] rounded-[10px] sm:w-[390px] sm:h-[305px] "
+                  key={index + 1}
+                >
+                  <div className="flip-card-inner relative w-full h-full text-center ">
+                    <div className="flip-card-front rounded-[10px] bg-transparent">
+                      <img
+                        src={item.image}
+                        alt="Avatar"
+                        className="w-full h-full rounded-[10px]"
+                      />
+                    </div>
 
-                  <div className="our-proj-card-des flex justify-center items-center bg-[#013dc4] rounded-[10px] border border-[#3A384F] hover:shadow-[0px_0px_23.9px_0px_#73708E69] flex items-center w-full h-full">
-                    <div
-                      className="home-des px-[15px] lg:text-center"
-                      style={{
-                        color: "rgba(252, 182, 26, 1)",
-                        fontSize: "20px",
-                      }}
-                    >
-                      <p className=" text-2xl font-semibold tracking-tight text-white lg:text-5x1">
-                        {item.title}
-                      </p>
-                      <p className="mt-7 text-sm leading-4 text-white">
-                        {item.description}
-                      </p>
-
-                      <button
-                        type="button"
-                        className="mt-8 text-white bg-[#FCB61A] hover:bg-yellow-800 focus:ring-10 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-3 text-center  items-center"
+                    <div className="our-proj-card-des flex justify-center items-center bg-[#013dc4] rounded-[10px] border border-[#3A384F] hover:shadow-[0px_0px_23.9px_0px_#73708E69] flex items-center w-full h-full">
+                      <div
+                        className="home-des px-[15px] lg:text-center"
+                        style={{
+                          color: "rgba(252, 182, 26, 1)",
+                          fontSize: "20px",
+                        }}
                       >
-                        <FaArrowRightLong />
-                      </button>
+                        <p className=" text-2xl font-semibold tracking-tight text-white lg:text-5x1">
+                          {item.title}
+                        </p>
+                        <p className="mt-7 text-sm leading-4 text-white">
+                          {item.description}
+                        </p>
+
+                        <button
+                          type="button"
+                          className="mt-8 text-white bg-[#FCB61A] hover:bg-yellow-800 focus:ring-10 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-3 text-center  items-center"
+                        >
+                          <FaArrowRightLong />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
         <div>
@@ -265,39 +272,38 @@ const Home = () => {
             backgroundPosition: "center",
           }}
         >
-          {expertCard.detail.map((item, index) => (
+          {weareexpert.map((item, index) => (
             <div
               className="expert-carous-inner w-[100%] h-[425px] relative max-w-xl mx-auto w-1/4 p-4"
               key={index}
-              onMouseEnter={() => handleMouseEnter(index, item.img)}
+              onMouseEnter={() => handleMouseEnter(index, item.image)}
               onMouseLeave={handleMouseLeave}
             >
               <div className="absolute inset-0 bg-[#000000] opacity-40"></div>
-            
-                <div className="absolute overflow-hidden inset-0 flex items-end justify-center">
-                  <div
-                    className={`expert-crrrr transform ${
-                      hoveredIndex === index || currentIndex === index
-                        ? "translate-y-[-40px]"
-                        : "translate-y-[35px]"
-                    } transition-transform duration-[.7s]`}
-                  >
-                    <h2 className="text-white font-semibold text-xl max-w-md mb-[40px] text-center">
-                      {item.name}
-                    </h2>
-                    <div className="exper-carousel-but">
-                      <button
-                        type="button"
-                        className="text-white bg-blue-800 focus:ring-10 focus:outline-none focus:ring-white mt-[-5px] font-medium rounded-full border-white border text-sm p-2 text-center items-center"
-                      >
-                        <FaArrowRightLong
-                          style={{ fill: "white", fontSize: "17px" }}
-                        />
-                      </button>
-                    </div>
+
+              <div className="absolute overflow-hidden inset-0 flex items-end justify-center">
+                <div
+                  className={`expert-crrrr transform ${
+                    hoveredIndex === index || currentIndex === index
+                      ? "translate-y-[-40px]"
+                      : "translate-y-[35px]"
+                  } transition-transform duration-[.7s]`}
+                >
+                  <h2 className="text-white font-semibold text-xl max-w-md mb-[40px] text-center">
+                    {item.Title}
+                  </h2>
+                  <div className="exper-carousel-but">
+                    <button
+                      type="button"
+                      className="text-white bg-blue-800 focus:ring-10 focus:outline-none focus:ring-white mt-[-5px] font-medium rounded-full border-white border text-sm p-2 text-center items-center"
+                    >
+                      <FaArrowRightLong
+                        style={{ fill: "white", fontSize: "17px" }}
+                      />
+                    </button>
                   </div>
                 </div>
-              
+              </div>
             </div>
           ))}
         </div>
@@ -318,52 +324,151 @@ const Home = () => {
               </p>
             </div>
             <div className="home-tech-carous mt-12 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 gap-5">
-              {homeTechCar.domain.map((item, index) => (
+              {whatwedo.map((item, index) => (
                 <div className="home-tech-carous-card" key={index + 1}>
                   <div className="home-tech-carous-inner">
                     <div className="flex justify-between text-[25px]">
                       <h2 className=" text-white text-[25px] leading-[25px] text-left font-bold xl:max-w-[200px] lg:max-w-[119px] sm:max-w-[80px]">
-                        {item.name}
+                        {item.title}
                       </h2>
                       <div className="home-tech-card-div"></div>
                     </div>
                     <div>
                       <div className="mt-10">
                         <ul className="flex flex-col gap-4">
-                          {item.desc.map((i, index) => (
-                            <li
-                              className="flex items-center justify-space w-full box-sizing: border-box;"
-                              key={index + 1}
-                            >
+                          {item.languages && (
+                            <li className="flex items-center justify-space w-full box-sizing: border-box;">
                               <div className="w-[80%]">
-                                <p className=" font-sans antialiased font-semibold w-full text-white">
-                                  {i.tech}
+                                <p className="font-sans antialiased font-semibold w-full text-white">
+                                  Languages
                                 </p>
                               </div>
                               <div className="w-[80%] home-tech-tech-logo flex justify-start align-center gap-1 box-sizing: border-box;">
-                                <img
-                                  src={i.img1}
-                                  style={{ width: "20%" }}
-                                  alt=""
-                                />
-                                <img
-                                  src={i.img2}
-                                  style={{ width: "20%" }}
-                                  alt=""
-                                />{" "}
-                                <img
-                                  src={i.img3}
-                                  style={{ width: "20%" }}
-                                  alt=""
-                                />
-                                <img
-                                  src={i.img4}
-                                  style={{ width: "20%" }}
-                                  alt=""
-                                />
+                                {item.languages.map((i, index) => (
+                                  <img
+                                    src={i.logo}
+                                    style={{ width: "20%" }}
+                                    alt=""
+                                    key={index}
+                                  />
+                                ))}
                               </div>
                             </li>
-                          ))}
+                          )}
+                          {item.database && (
+                            <li className="flex items-center justify-space w-full box-sizing: border-box;">
+                              <div className="w-[80%]">
+                                <p className="font-sans antialiased font-semibold w-full text-white">
+                                  Database
+                                </p>
+                              </div>
+                              <div className="w-[80%] home-tech-tech-logo flex justify-start align-center gap-1 box-sizing: border-box;">
+                                {item.database.map((i, index) => (
+                                  <img
+                                    src={i.logo}
+                                    style={{ width: "20%" }}
+                                    alt=""
+                                    key={index}
+                                  />
+                                ))}
+                              </div>
+                            </li>
+                          )}
+                          {item.sdk && (
+                            <li className="flex items-center justify-space w-full box-sizing: border-box;">
+                              <div className="w-[80%]">
+                                <p className="font-sans antialiased font-semibold w-full text-white">
+                                  SDK
+                                </p>
+                              </div>
+                              <div className="w-[80%] home-tech-tech-logo flex justify-start align-center gap-1 box-sizing: border-box;">
+                                {item.sdk.map((i, index) => (
+                                  <img
+                                    src={i.logo}
+                                    style={{ width: "20%" }}
+                                    alt=""
+                                    key={index}
+                                  />
+                                ))}
+                              </div>
+                            </li>
+                          )}
+                          {item.tools && (
+                            <li className="flex items-center justify-space w-full box-sizing: border-box;">
+                              <div className="w-[80%]">
+                                <p className="font-sans antialiased font-semibold w-full text-white">
+                                  Tools
+                                </p>
+                              </div>
+                              <div className="w-[80%] home-tech-tech-logo flex justify-start align-center gap-1 box-sizing: border-box;">
+                                {item.tools.map((i, index) => (
+                                  <img
+                                    src={i.logo}
+                                    style={{ width: "20%" }}
+                                    alt=""
+                                    key={index}
+                                  />
+                                ))}
+                              </div>
+                            </li>
+                          )}
+                          {item.frontend && (
+                            <li className="flex items-center justify-space w-full box-sizing: border-box;">
+                              <div className="w-[80%]">
+                                <p className="font-sans antialiased font-semibold w-full text-white">
+                                  Frontend
+                                </p>
+                              </div>
+                              <div className="w-[80%] home-tech-tech-logo flex justify-start align-center gap-1 box-sizing: border-box;">
+                                {item.frontend.map((i, index) => (
+                                  <img
+                                    src={i.logo}
+                                    style={{ width: "20%" }}
+                                    alt=""
+                                    key={index}
+                                  />
+                                ))}
+                              </div>
+                            </li>
+                          )}
+                          {item.framework && (
+                            <li className="flex items-center justify-space w-full box-sizing: border-box;">
+                              <div className="w-[80%]">
+                                <p className="font-sans antialiased font-semibold w-full text-white">
+                                  Framework
+                                </p>
+                              </div>
+                              <div className="w-[80%] home-tech-tech-logo flex justify-start align-center gap-1 box-sizing: border-box;">
+                                {item.framework.map((i, index) => (
+                                  <img
+                                    src={i.logo}
+                                    style={{ width: "20%" }}
+                                    alt=""
+                                    key={index}
+                                  />
+                                ))}
+                              </div>
+                            </li>
+                          )}
+                          {item.languages && (
+                            <li className="flex items-center justify-space w-full box-sizing: border-box;">
+                              <div className="w-[80%]">
+                                <p className="font-sans antialiased font-semibold w-full text-white">
+                                  Languages
+                                </p>
+                              </div>
+                              <div className="w-[80%] home-tech-tech-logo flex justify-start align-center gap-1 box-sizing: border-box;">
+                                {item.languages.map((i, index) => (
+                                  <img
+                                    src={i.logo}
+                                    style={{ width: "20%" }}
+                                    alt=""
+                                    key={index}
+                                  />
+                                ))}
+                              </div>
+                            </li>
+                          )}
                         </ul>
                       </div>
                       <div className="p-0 mt-12 flex justify-center item-center">
@@ -456,26 +561,14 @@ const Home = () => {
             </p>
           </div>
           <div className="award-img-sec sm:w-full lg:w-half md:w-full md:justify-center sm:justify-center flex lg:justify-end gap-5">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/18c5/27d7/d20b5ab416b22d41fb0b0950e07ea938?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K3ZdmCSYrTsXQMvwXaPy0Eszo-2JIRd89R4vxcUuQ-QxIf2AABrT3XczR9uv9TX5zewGaAiM21gcD0K~xUuwhkpwIcLV14oo-SQQEbD8B3qLDw41xyRfhBdOdT5UMayPWPcBUR~elh8k1NNVWXzmvmDs0~y8HzTJNBBtgoOeJzdcdRqtUrN~Q84PMUgmSySBsAf0GKE3OXDiNk9U0f94Z0uRBhhkreY3PVBQs3Vbqnx-tMfLVlnMOaJ~kRBAm2pfM91e1TPiYkPvF4H7M9hmFqsuhel7IWCVO-bL4cF-7tQNdMWwc2rWYQZDWzcG5oVWmwcSGoshL84DIoS0kmKMdg__"
-              alt=""
-              className="w-[20%]"
-            />
-            <img
-              src="https://s3-alpha-sig.figma.com/img/18c5/27d7/d20b5ab416b22d41fb0b0950e07ea938?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K3ZdmCSYrTsXQMvwXaPy0Eszo-2JIRd89R4vxcUuQ-QxIf2AABrT3XczR9uv9TX5zewGaAiM21gcD0K~xUuwhkpwIcLV14oo-SQQEbD8B3qLDw41xyRfhBdOdT5UMayPWPcBUR~elh8k1NNVWXzmvmDs0~y8HzTJNBBtgoOeJzdcdRqtUrN~Q84PMUgmSySBsAf0GKE3OXDiNk9U0f94Z0uRBhhkreY3PVBQs3Vbqnx-tMfLVlnMOaJ~kRBAm2pfM91e1TPiYkPvF4H7M9hmFqsuhel7IWCVO-bL4cF-7tQNdMWwc2rWYQZDWzcG5oVWmwcSGoshL84DIoS0kmKMdg__"
-              alt=""
-              className="w-[20%]"
-            />
-            <img
-              src="https://s3-alpha-sig.figma.com/img/18c5/27d7/d20b5ab416b22d41fb0b0950e07ea938?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K3ZdmCSYrTsXQMvwXaPy0Eszo-2JIRd89R4vxcUuQ-QxIf2AABrT3XczR9uv9TX5zewGaAiM21gcD0K~xUuwhkpwIcLV14oo-SQQEbD8B3qLDw41xyRfhBdOdT5UMayPWPcBUR~elh8k1NNVWXzmvmDs0~y8HzTJNBBtgoOeJzdcdRqtUrN~Q84PMUgmSySBsAf0GKE3OXDiNk9U0f94Z0uRBhhkreY3PVBQs3Vbqnx-tMfLVlnMOaJ~kRBAm2pfM91e1TPiYkPvF4H7M9hmFqsuhel7IWCVO-bL4cF-7tQNdMWwc2rWYQZDWzcG5oVWmwcSGoshL84DIoS0kmKMdg__"
-              alt=""
-              className="w-[20%]"
-            />
-            <img
-              src="https://s3-alpha-sig.figma.com/img/18c5/27d7/d20b5ab416b22d41fb0b0950e07ea938?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K3ZdmCSYrTsXQMvwXaPy0Eszo-2JIRd89R4vxcUuQ-QxIf2AABrT3XczR9uv9TX5zewGaAiM21gcD0K~xUuwhkpwIcLV14oo-SQQEbD8B3qLDw41xyRfhBdOdT5UMayPWPcBUR~elh8k1NNVWXzmvmDs0~y8HzTJNBBtgoOeJzdcdRqtUrN~Q84PMUgmSySBsAf0GKE3OXDiNk9U0f94Z0uRBhhkreY3PVBQs3Vbqnx-tMfLVlnMOaJ~kRBAm2pfM91e1TPiYkPvF4H7M9hmFqsuhel7IWCVO-bL4cF-7tQNdMWwc2rWYQZDWzcG5oVWmwcSGoshL84DIoS0kmKMdg__"
-              alt=""
-              className="w-[20%]"
-            />
+            {awards.map((item, index) => (
+              <img
+                src={item.Awardimage}
+                alt=""
+                className="w-[20%]"
+                key={index + 1}
+              />
+            ))}
           </div>
         </div>
         <div className="home-testimonial">

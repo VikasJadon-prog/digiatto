@@ -62,3 +62,24 @@
 .service-soft-eng-cards .home-card:hover .card-desc-a {
   color: #013dc4;
 }
+
+.service-digital-cards .home-card:hover {
+  transform: none;
+  transition: none;
+}
+
+.service-digital-cards .card-desc{
+  border-radius: none;
+  background-color: transparent;
+  border-color: none;
+  border-width: 0px;
+}
+
+.service-digital-cards .home-card:hover .card-desc {
+  box-shadow: none;
+}
+
+
+.service-digital-cards .home-card:hover .card-desc-a {
+  color: #013dc4;
+}

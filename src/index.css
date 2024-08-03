@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
-    font-family: "Profanations-Regular";
-    src: local("Profanations-Regular"),
-      url("./assets/Fonts/Profanations-Regular.otf") format("opentype");
- 
-  }
-  .customFont{
-    font-family: 'Profanations-Regular';
-  }
-
+  font-family: "Profanations-Regular";
+  src: local("Profanations-Regular"),
+    url("./assets/Fonts/Profanations-Regular.otf") format("opentype");
+}
+.customFont {
+  font-family: "Profanations-Regular";
+}
